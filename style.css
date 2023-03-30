@@ -11,8 +11,8 @@
 
 canvas {
 	border: 3px solid black;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 50%;
+  	padding: 0;
+    	margin: auto;
+    	display: block;
+  	width: 100%;
 }

@@ -23,6 +23,7 @@ var canvasHeight = canvas.height;
 var tileCount = 15;
 var snake = [];
 var snakeLength = 3;
+var vitesse = 200
 var apple = {
 	x: 0,
 	y: 0
@@ -43,7 +44,7 @@ generateApple();
 gameLoop = setInterval(function() {
 	update();
 	draw();
-}, 150);
+}, vitesse);
 
 // Update game
 function update() {
@@ -149,7 +150,7 @@ for (var i = 0; i < snake.length; i++) {
 ctx.drawImage(appleImg, apple.x * tileSize, apple.y * tileSize, tileSize, tileSize);
 
 // Draw score
-ctx.font = "20px Arial";
+ctx.font = "20px Luckiest_Guy";
 ctx.fillStyle = "#ffffff";
 ctx.fillText("Score: " + score, 10, 25);
 }
@@ -204,7 +205,7 @@ function draw() {
 	
 	// Draw score
 	ctx.fillStyle = "#fff";
-	ctx.font = "20px Arial";
+	ctx.font = "20px Luckiest_Guy";
 	ctx.fillText("Score: " + score, 10, 30);
 }
 

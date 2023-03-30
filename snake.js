@@ -1,16 +1,16 @@
 // Load images
 var appleImg = new Image();
-appleImg.src = "apple.png";
+appleImg.src = "IMG/JS/apple.png";
 var headUpImg = new Image();
-headUpImg.src = "head-up.png";
+headUpImg.src = "IMG/JS/head-up.png";
 var headDownImg = new Image();
-headDownImg.src = "head-down.png";
+headDownImg.src = "IMG/JS/head-down.png";
 var headLeftImg = new Image();
-headLeftImg.src = "head-left.png";
+headLeftImg.src = "IMG/JS/head-left.png";
 var headRightImg = new Image();
-headRightImg.src = "head-right.png";
+headRightImg.src = "IMG/JS/head-right.png";
 var bodyImg = new Image();
-bodyImg.src = "body.png";
+bodyImg.src = "IMG/JS/body.png";
 
 // Initialize canvas
 var canvas = document.getElementById("canvas");

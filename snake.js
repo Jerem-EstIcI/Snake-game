@@ -150,7 +150,7 @@ ctx.drawImage(appleImg, apple.x * tileSize, apple.y * tileSize, tileSize, tileSi
 
 // Draw score
 ctx.font = "20px Arial";
-ctx.fillStyle = "#000000";
+ctx.fillStyle = "#ffffff";
 ctx.fillText("Score: " + score, 10, 25);
 }
 
@@ -203,7 +203,7 @@ function draw() {
 	ctx.drawImage(appleImg, appleX, appleY, tileSize, tileSize);
 	
 	// Draw score
-	ctx.fillStyle = "#000";
+	ctx.fillStyle = "#fff";
 	ctx.font = "20px Arial";
 	ctx.fillText("Score: " + score, 10, 30);
 }

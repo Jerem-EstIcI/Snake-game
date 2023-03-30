@@ -1,4 +1,4 @@
-﻿body{
+body{
 	background-color: #FEF5E7;
 }
 
@@ -10,9 +10,12 @@
 }
 
 canvas {
-	border: 1.5px solid black;
+	border: 5px solid white;
   	padding: 0;
     	margin: auto;
     	display: block;
-  	width: 30%;
+  	width: 32.2%;
+	background-image:
+		url('background.png');
+		
 }

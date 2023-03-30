@@ -235,3 +235,8 @@ document.addEventListener("keydown", function(event) {
 		direction = "down";
 	}
 });
+
+var restartButton = document.getElementById("restart");
+restartButton.addEventListener("click", function() {
+	location.reload();
+});

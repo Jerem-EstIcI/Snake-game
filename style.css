@@ -2,4 +2,9 @@
 	background-color: #FEF5E7;
 }
 
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}

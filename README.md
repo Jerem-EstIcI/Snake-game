@@ -23,6 +23,8 @@ HTML/Javascript/CSS
 #### 1.2
 - [x] Restart button 
 
+#### 1.3
+
 
 ### 2
 - [ ] Working 1v1 game
@@ -81,15 +83,3 @@ HTML/Javascript/CSS
 - [ ] 1v1 game page style
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-

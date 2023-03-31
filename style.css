@@ -3,21 +3,19 @@ body{
 	font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
+.titre {
+	position: absolute;
+	margin-top: 0px;
 }
 
 .commandes {
 	position: absolute;
-	margin-top: 5px;
+	margin-top: 60px;
 }
 
 .partcommandes {
 	position: absolute;
-	margin-top: 35px;
+	margin-top: 85px;
 }
 
 #canvas {

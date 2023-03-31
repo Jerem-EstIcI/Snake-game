@@ -6,7 +6,7 @@ HTML/Javascript/CSS
 
 # To do
 
-	#Javascript 
+	Javascript 
   
 		1  - [x] Working game (one player)
 			a  - [x] Score 
@@ -15,7 +15,7 @@ HTML/Javascript/CSS
         
 		2  - [ ] Working 1v1 game
   
-	#Texture
+	Texture
   
 		1 - [ ] All texture for Snake 
 			a - [ ] Logo

@@ -22,8 +22,11 @@ HTML/Javascript/CSS
 
 #### 1.2
 - [x] Restart button 
+- [ ] Start button
 
 #### 1.3
+
+- [ ] Can change speed before starting **(option)**
 
 
 ### 2

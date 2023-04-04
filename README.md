@@ -26,7 +26,7 @@ HTML/Javascript/CSS
 - [ ] Start button
 
 #### 1.3
-
+- [ ] can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
 - [ ] Can change speed before starting **(option)**
 
 

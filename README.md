@@ -14,7 +14,7 @@ HTML/Javascript/CSS
 
 
 ### 1
-
+- [ ] game complete
 - [x] Working game (one player)
 
 #### 1.1

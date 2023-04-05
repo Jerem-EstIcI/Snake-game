@@ -18,6 +18,11 @@ body{
 	margin-top: 95px;
 }
 
+.imgcommandes {
+	position: absolute;
+	margin-top: 400px;
+}
+
 #canvas {
 	border: 5px solid white;
   	padding: 0;

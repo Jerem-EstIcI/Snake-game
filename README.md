@@ -48,6 +48,8 @@ HTML/Javascript/CSS
 - [ ] Apple texture 
 - [ ] Basic snake skin texture
 - [x] Background texture
+- [x] K-UP/DOWN/RIGHT/LEFT texture
+- [ ] ZQSD texture
 
 #### 1.2
 

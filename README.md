@@ -14,7 +14,7 @@ HTML/Javascript/CSS
 
 
 ### 1
-- [ ] game complete
+- [ ] Game complete
 - [x] Working game (one player)
 
 #### 1.1
@@ -24,10 +24,10 @@ HTML/Javascript/CSS
 #### 1.2
 - [x] Restart button 
 - [ ] Start button
-- [ ] make the start button appear again if the start button is activated and make the start button disappear **(option)**
+- [ ] Make the start button appear again if the start button is activated and make the start button disappear **(option)**
 
 #### 1.3
-- [ ] can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
+- [ ] Can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
 - [ ] Can change speed before starting **(option)**
 
 
@@ -54,8 +54,8 @@ HTML/Javascript/CSS
 
 #### 1.2
 
-- [ ] several different snake textures **(option)**
-- [ ] several different background textures **(option)**
+- [ ] Several different snake textures **(option)**
+- [ ] Several different background textures **(option)**
 
 ---
 

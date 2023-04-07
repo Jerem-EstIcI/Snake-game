@@ -27,7 +27,7 @@ HTML/Javascript/CSS
 - [ ] Make the start button appear again if the start button is activated and make the start button disappear **(option)**
 
 #### 1.3
-- [ ] Can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
+- [x] Can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
 - [ ] Can change speed before starting **(option)**
 
 

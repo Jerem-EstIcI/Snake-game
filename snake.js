@@ -236,6 +236,19 @@ document.addEventListener("keydown", function(event) {
 	}
 });
 
+document.addEventListener("keydown", function(event) {
+	if (event.keyCode == 81 && direction != "right") { // touche Q
+		direction = "left";
+	} else if (event.keyCode == 90 && direction != "down") { // touche Z
+		direction = "up";
+	} else if (event.keyCode == 68 && direction != "left") { // touche D
+		direction = "right";
+	} else if (event.keyCode == 83 && direction != "up") { // touche S
+		direction = "down";
+	}
+});
+
+
 var restartButton = document.getElementById("restart");
 restartButton.addEventListener("click", function() {
 	location.reload();

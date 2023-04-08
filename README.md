@@ -29,6 +29,7 @@ HTML/Javascript/CSS
 #### 1.3
 - [x] Can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
 - [ ] Can change speed before starting **(option)**
+- [ ] Save the color of the snake **(option**
 
 
 ### 2

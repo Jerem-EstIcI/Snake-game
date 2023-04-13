@@ -51,7 +51,7 @@ HTML/Javascript/CSS
 - [x] All texture for Snake 
 
 #### 1.1
-- [ ] Logo
+- [x] Logo
 - [x] Apple texture 
 - [ ] Basic snake skin texture
 - [x] Background texture
@@ -69,7 +69,7 @@ HTML/Javascript/CSS
 
 ### 1 
 
-- [ ] Menu page
+- [x] Menu page
 
 ### 2
 
@@ -86,7 +86,7 @@ HTML/Javascript/CSS
 
 ### 1 
 
-- [ ] Menu page style
+- [x] Menu page style
 
 ### 2
 

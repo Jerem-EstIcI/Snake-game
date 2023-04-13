@@ -53,7 +53,10 @@ HTML/Javascript/CSS
 #### 1.1
 - [x] Logo
 - [x] Apple texture 
-- [ ] Basic snake skin texture
+- [x] Head snake texture
+- [x] Body snake texture
+- [ ] rounded snake texture
+- [ ] tail snake texture
 - [x] Background texture
 - [x] K-UP/DOWN/RIGHT/LEFT texture
 - [ ] ZQSD texture

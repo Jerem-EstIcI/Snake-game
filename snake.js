@@ -11,6 +11,10 @@ var headRightImg = new Image();
 headRightImg.src = "IMG/JS/head-right.png";
 var bodyImg = new Image();
 bodyImg.src = "IMG/JS/body.png";
+var bodyHorizontalImg = new Image();
+bodyHorizontalImg.src = "IMG/JS/body-horizontal.png"
+var bodyVerticalImg = new Image();
+bodyVerticalImg.src = "IMG/JS/body-vertical.png"
 
 // Initialize canvas
 var canvas = document.getElementById("canvas");
@@ -171,32 +175,53 @@ function draw() {
 	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 	
 	// Draw snake
-	for (var i = 0; i < snake.length; i++) {
-		var x = snake[i].x * tileSize;
-		var y = snake[i].y * tileSize;
-		var img;
-		if (i == 0) {
-			// Snake head
-			switch(direction) {
-				case "up":
-					img = headUpImg;
-					break;
-				case "down":
-					img = headDownImg;
-					break;
-				case "left":
-					img = headLeftImg;
-					break;
-				case "right":
-					img = headRightImg;
-					break;
-			}
-		} else {
-			// Snake body
-			img = bodyImg;
+for (var i = 0; i < snake.length; i++) {
+	var snakePart = snake[i];
+	var img;
+
+	if (i === 0) {
+		switch (direction) {
+			case "right":
+				img = headRightImg;
+				break;
+			case "left":
+				img = headLeftImg;
+				break;
+			case "up":
+				img = headUpImg;
+				break;
+			case "down":
+				img = headDownImg;
+				break;
 		}
-		ctx.drawImage(img, x, y, tileSize, tileSize);
+	} else if (i === snake.length - 1) {
+		var previousSnakePart = snake[i - 1];
+
+		if (previousSnakePart.x < snakePart.x) {
+			img = bodyHorizontalImg;
+		} else if (previousSnakePart.x > snakePart.x) {
+			img = bodyHorizontalImg;
+		} else if (previousSnakePart.y < snakePart.y) {
+			img = bodyVerticalImg;
+		} else if (previousSnakePart.y > snakePart.y) {
+			img = bodyVerticalImg;
+		}
+	} else {
+		var previousSnakePart = snake[i - 1];
+		var nextSnakePart = snake[i + 1];
+
+		if ((previousSnakePart.x < snakePart.x && nextSnakePart.x > snakePart.x) ||
+			(previousSnakePart.x > snakePart.x && nextSnakePart.x < snakePart.x)) {
+			img = bodyHorizontalImg;
+		} else if ((previousSnakePart.y < snakePart.y && nextSnakePart.y > snakePart.y) ||
+			(previousSnakePart.y > snakePart.y && nextSnakePart.y < snakePart.y)) {
+			img = bodyVerticalImg;
+		}
 	}
+
+	ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
+}
+
 	
 	// Draw apple
 	var appleX = apple.x * tileSize;

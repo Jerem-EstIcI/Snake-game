@@ -43,7 +43,7 @@ HTML/Javascript/CSS
   
 ###  1
 
-- [ ] All texture for Snake 
+- [x] All texture for Snake 
 
 #### 1.1
 - [ ] Logo

@@ -52,7 +52,7 @@ HTML/Javascript/CSS
 
 #### 1.1
 - [ ] Logo
-- [ ] Apple texture 
+- [x] Apple texture 
 - [ ] Basic snake skin texture
 - [x] Background texture
 - [x] K-UP/DOWN/RIGHT/LEFT texture

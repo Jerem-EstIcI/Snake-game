@@ -74,11 +74,12 @@ HTML/Javascript/CSS
 ### 2
 
 - [x] One player game page
+- [ ] Music
 
 ### 3 
 
 - [ ] 1v1 game page
-
+- [ ] Music
 ---
 
 ## CSS

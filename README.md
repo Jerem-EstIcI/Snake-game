@@ -2,6 +2,10 @@
 
 **[Site](https://jerem-estici.github.io/Snake-game-html/)**
 
+##Ressource utilisées
+[Pour faire des README](https://www.youtube.com/watch?v=4lg3YyugRZQ&ab_channel=e-genieclimatique/)
+[Documentation pour le site](https://developer.mozilla.org/fr/)
+
 ## Language 
 HTML/Javascript/CSS
 

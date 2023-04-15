@@ -74,16 +74,33 @@ HTML/Javascript/CSS
 
 ### 1 
 
-- [x] Menu page
+- [ ] Menu page
+
+#### 1.1
+
+- [x] Navigation bar
+- [ ] Info 
 
 ### 2
 
-- [x] One player game page
+- [ ] One player game page
+
+#### 2.1
+
+- [x] Navigation bar
+- [ ] Keyboard key 
+- [ ] Goal of the game
 - [ ] Music
 
 ### 3 
 
 - [ ] 1v1 game page
+
+#### 3.1
+
+- [x] Navigation bar
+- [ ] Keyboard key 
+- [ ] Goal of the game
 - [ ] Music
 ---
 

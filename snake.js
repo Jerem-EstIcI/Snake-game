@@ -15,10 +15,20 @@ var bodyHorizontalImg = new Image();
 bodyHorizontalImg.src = "IMG/JS/body-horizontal.png"
 var bodyVerticalImg = new Image();
 bodyVerticalImg.src = "IMG/JS/body-vertical.png"
+var tailUpImg = new Image();
+tailUpImg.src = "IMG/JS/tail-up.png";
+var tailDownImg = new Image();
+tailDownImg.src = "IMG/JS/tail-down.png";
+var tailLeftImg = new Image();
+tailLeftImg.src = "IMG/JS/tail-left.png";
+var tailRightImg = new Image();
+tailRightImg.src = "IMG/JS/tail-right.png";
 
 // Initialize canvas
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
+
+
 
 // Set variables
 var tileSize = 32;
@@ -108,6 +118,7 @@ for (var i = 0; i < snake.length; i++) {
 	var img;
 
 	if (i === 0) {
+		// Snake head
 		switch (direction) {
 			case "right":
 				img = headRightImg;
@@ -123,31 +134,42 @@ for (var i = 0; i < snake.length; i++) {
 				break;
 		}
 	} else if (i === snake.length - 1) {
+		// Snake tail
 		var previousSnakePart = snake[i - 1];
-
-		if (previousSnakePart.x < snakePart.x) {
-			img = bodyImg;
-		} else if (previousSnakePart.x > snakePart.x) {
-			img = bodyImg;
-		} else if (previousSnakePart.y < snakePart.y) {
-			img = bodyImg;
-		} else if (previousSnakePart.y > snakePart.y) {
-			img = bodyImg;
+		switch (direction) {
+			case "right":
+				img = previousSnakePart.y < snakePart.y ? tailDownImg : tailUpImg;
+				break;
+			case "left":
+				img = previousSnakePart.y < snakePart.y ? tailDownImg : tailUpImg;
+				break;
+			case "up":
+				img = previousSnakePart.x < snakePart.x ? tailRightImg : tailLeftImg;
+				break;
+			case "down":
+				img = previousSnakePart.x < snakePart.x ? tailRightImg : tailLeftImg;
+				break;
 		}
 	} else {
+		// Snake body
 		var previousSnakePart = snake[i - 1];
 		var nextSnakePart = snake[i + 1];
-
 		if ((previousSnakePart.x < snakePart.x && nextSnakePart.x > snakePart.x) ||
 			(previousSnakePart.x > snakePart.x && nextSnakePart.x < snakePart.x)) {
-			img = bodyImg;
+			img = bodyHorizontalImg;
 		} else if ((previousSnakePart.y < snakePart.y && nextSnakePart.y > snakePart.y) ||
 			(previousSnakePart.y > snakePart.y && nextSnakePart.y < snakePart.y)) {
+			img = bodyVerticalImg;
+		} else if ((previousSnakePart.x < snakePart.x && nextSnakePart.y < snakePart.y) ||
+			(previousSnakePart.y < snakePart.y && nextSnakePart.x < snakePart.x)) {
+			img = bodyImg;
+		} else if ((previousSnakePart.x > snakePart.x && nextSnakePart.y > snakePart.y) ||
+			(previousSnakePart.y > snakePart.y && nextSnakePart.x > snakePart.x)) {
 			img = bodyImg;
 		}
 	}
+ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
 
-	ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
 }
 
 // Draw apple
@@ -175,52 +197,52 @@ function draw() {
 	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 	
 	// Draw snake
-for (var i = 0; i < snake.length; i++) {
-	var snakePart = snake[i];
-	var img;
+	for (var i = 0; i < snake.length; i++) {
+		var snakePart = snake[i];
+		var img;
 
-	if (i === 0) {
-		switch (direction) {
-			case "right":
-				img = headRightImg;
-				break;
-			case "left":
-				img = headLeftImg;
-				break;
-			case "up":
-				img = headUpImg;
-				break;
-			case "down":
-				img = headDownImg;
-				break;
-		}
-	} else if (i === snake.length - 1) {
-		var previousSnakePart = snake[i - 1];
+		if (i === 0) {
+			switch (direction) {
+				case "right":
+					img = headRightImg;
+					break;
+				case "left":
+					img = headLeftImg;
+					break;
+				case "up":
+					img = headUpImg;
+					break;
+				case "down":
+					img = headDownImg;
+					break;
+			}
+		} else if (i === snake.length - 1) {
+			var previousSnakePart = snake[i - 1];
 
-		if (previousSnakePart.x < snakePart.x) {
-			img = bodyHorizontalImg;
-		} else if (previousSnakePart.x > snakePart.x) {
-			img = bodyHorizontalImg;
-		} else if (previousSnakePart.y < snakePart.y) {
-			img = bodyVerticalImg;
-		} else if (previousSnakePart.y > snakePart.y) {
-			img = bodyVerticalImg;
-		}
-	} else {
-		var previousSnakePart = snake[i - 1];
-		var nextSnakePart = snake[i + 1];
+			if (previousSnakePart.x < snakePart.x) {
+				img = tailRightImg;
+			} else if (previousSnakePart.x > snakePart.x) {
+				img = tailLeftImg;
+			} else if (previousSnakePart.y < snakePart.y) {
+				img = tailDownImg;
+			} else if (previousSnakePart.y > snakePart.y) {
+				img = tailUpImg;
+				}
+			} else {
+				var previousSnakePart = snake[i - 1];
+				var nextSnakePart = snake[i + 1];
 
-		if ((previousSnakePart.x < snakePart.x && nextSnakePart.x > snakePart.x) ||
-			(previousSnakePart.x > snakePart.x && nextSnakePart.x < snakePart.x)) {
-			img = bodyHorizontalImg;
-		} else if ((previousSnakePart.y < snakePart.y && nextSnakePart.y > snakePart.y) ||
-			(previousSnakePart.y > snakePart.y && nextSnakePart.y < snakePart.y)) {
-			img = bodyVerticalImg;
-		}
+				if ((previousSnakePart.x < snakePart.x && nextSnakePart.x > snakePart.x) ||
+					(previousSnakePart.x > snakePart.x && nextSnakePart.x < snakePart.x)) {
+					img = bodyHorizontalImg;
+				} else if ((previousSnakePart.y < snakePart.y && nextSnakePart.y > snakePart.y) ||
+					(previousSnakePart.y > snakePart.y && nextSnakePart.y < snakePart.y)) {
+					img = bodyVerticalImg;
+				}
+			}
+
+		ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
 	}
-
-	ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
-}
 
 	
 	// Draw apple

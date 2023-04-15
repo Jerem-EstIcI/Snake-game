@@ -28,8 +28,9 @@ HTML/Javascript/CSS
 
 #### 1.2
 - [x] Restart button 
-- [ ] Start button
-- [ ] Make the start button appear again if the start button is activated and make the start button disappear **(option)**
+- [x] Start button
+- [x] makes the Start button disappear if clicked **(option)**
+- [x] makes the Restart button appear if the Start button clicked **(option)**
 
 #### 1.3
 - [x] Can move with K_UP/DOWN/RIGHT/LEFT or ZQSD

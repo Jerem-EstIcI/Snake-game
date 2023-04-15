@@ -56,7 +56,7 @@ HTML/Javascript/CSS
 - [x] Head snake texture
 - [x] Body snake texture
 - [ ] rounded snake texture
-- [ ] tail snake texture
+- [x] tail snake texture
 - [x] Background texture
 - [x] K-UP/DOWN/RIGHT/LEFT texture
 - [ ] ZQSD texture

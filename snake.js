@@ -242,15 +242,21 @@ function draw() {
 				img = tailUpImg;
 				}
 			} else {
-				var previousSnakePart = snake[i - 1];
-				var nextSnakePart = snake[i + 1];
-
-				if ((previousSnakePart.x < snakePart.x && nextSnakePart.x > snakePart.x) ||
-					(previousSnakePart.x > snakePart.x && nextSnakePart.x < snakePart.x)) {
-					img = bodyHorizontalImg;
-				} else if ((previousSnakePart.y < snakePart.y && nextSnakePart.y > snakePart.y) ||
-					(previousSnakePart.y > snakePart.y && nextSnakePart.y < snakePart.y)) {
+				// Snake body
+				var previousPart = snake[i - 1];
+				var nextPart = snake[i + 1];
+				if (snakePart.x === previousPart.x && snakePart.x === nextPart.x) {
 					img = bodyVerticalImg;
+				} else if (snakePart.y === previousPart.y && snakePart.y === nextPart.y) {
+					img = bodyHorizontalImg;
+				} else if (snakePart.x < previousPart.x && snakePart.y < nextPart.y || snakePart.y < previousPart.y && snakePart.x < nextPart.x) {
+					img = cornerTopRightImg;
+				} else if (snakePart.x < previousPart.x && snakePart.y > nextPart.y || snakePart.y > previousPart.y && snakePart.x < nextPart.x) {
+					img = cornerBottomRightImg;
+			} else if (snakePart.x > previousPart.x && snakePart.y > nextPart.y || snakePart.y > previousPart.y && snakePart.x > nextPart.x) {
+					img = cornerBottomLeftImg;
+				} else if (snakePart.x > previousPart.x && snakePart.y < nextPart.y || snakePart.y < previousPart.y && snakePart.x > nextPart.x) {
+					img = cornerTopLeftImg;
 				}
 			}
 

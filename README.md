@@ -31,12 +31,13 @@ HTML/Javascript/CSS
 - [x] Start button
 - [x] Makes the Start button disappear if clicked **(option)**
 - [ ] Makes the Restart button appear if the Start button clicked **(option)**
+- [ ] Can start with the keyboard key **(option)**
 
 #### 1.3
 - [ ] Make sure that the apple does not appear twice in the same place **(option)**
 - [x] Can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
 - [ ] Can change speed before starting **(option)**
-- [ ] Save the color of the snake **(option**
+- [ ] Save the color of the snake **(option)**
 
 
 ### 2

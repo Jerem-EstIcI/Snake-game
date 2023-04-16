@@ -21,6 +21,14 @@ var tailLeftImg = new Image();
 tailLeftImg.src = "SRC/IMG/JS/tail-left.png";
 var tailRightImg = new Image();
 tailRightImg.src = "SRC/IMG/JS/tail-right.png";
+var cornerTopLeftImg = new Image();
+cornerTopLeftImg.src = "SRC/IMG/JS/corner-top-left.png";
+var cornerTopRightImg = new Image();
+cornerTopRightImg.src = "SRC/IMG/JS/corner-top-right.png";
+var cornerBottomLeftImg = new Image();
+cornerBottomLeftImg.src = "SRC/IMG/JS/corner-bottom-left.png";
+var cornerBottomRightImg = new Image();
+cornerBottomRightImg.src = "SRC/IMG/JS/corner-bottom-right.png";
 
 // Initialize canvas
 var canvas = document.getElementById("canvas");

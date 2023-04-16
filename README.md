@@ -54,7 +54,7 @@ HTML/Javascript/CSS
 - [x] All texture for Snake 
 
 #### 1.1
-- [x] page background (menu...) **(option)**
+- [ ] page background (menu...) **(option)**
 - [x] Logo
 - [x] Apple texture 
 - [x] Head snake texture

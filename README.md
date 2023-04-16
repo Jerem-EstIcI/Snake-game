@@ -30,7 +30,7 @@ HTML/Javascript/CSS
 - [x] Restart button 
 - [x] Start button
 - [x] Makes the Start button disappear if clicked **(option)**
-- [ ] Makes the Restart button appear if the Start button clicked **(option)**
+- [x] Makes the Restart button appear if the Start button clicked **(option)**
 - [ ] Can start with the keyboard key **(option)**
 
 #### 1.3

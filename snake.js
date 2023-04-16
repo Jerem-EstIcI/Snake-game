@@ -265,16 +265,24 @@ function draw() {
 
 // Generate apple
 function generateApple() {
-	apple.x = Math.floor(Math.random() * tileCount);
-	apple.y = Math.floor(Math.random() * tileCount);
-	
-	// Make sure apple is not on snake
-	for (var i = 0; i < snake.length; i++) {
-		if (apple.x == snake[i].x && apple.y == snake[i].y) {
-			generateApple();
-			break;
-		}
-	}
+    var lastApple = {
+        x: apple.x,
+        y: apple.y
+    };
+    do {
+        apple.x = Math.floor(Math.random() * tileCount);
+        apple.y = Math.floor(Math.random() * tileCount);
+    } while (appleOnSnake() || (apple.x === lastApple.x && apple.y === lastApple.y));
+}
+
+// Check if apple is on snake
+function appleOnSnake() {
+    for (var i = 0; i < snake.length; i++) {
+        if (apple.x === snake[i].x && apple.y === snake[i].y) {
+            return true;
+        }
+    }
+    return false;
 }
 
 // Handle key events

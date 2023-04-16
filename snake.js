@@ -1,28 +1,28 @@
 // Load images
 var appleImg = new Image();
-appleImg.src = "IMG/JS/apple.png";
+appleImg.src = "SRC/IMG/JS/apple.png";
 var headUpImg = new Image();
-headUpImg.src = "IMG/JS/head-up.png";
+headUpImg.src = "SRC/IMG/JS/head-up.png";
 var headDownImg = new Image();
-headDownImg.src = "IMG/JS/head-down.png";
+headDownImg.src = "SRC/IMG/JS/head-down.png";
 var headLeftImg = new Image();
-headLeftImg.src = "IMG/JS/head-left.png";
+headLeftImg.src = "SRC/IMG/JS/head-left.png";
 var headRightImg = new Image();
-headRightImg.src = "IMG/JS/head-right.png";
+headRightImg.src = "SRC/IMG/JS/head-right.png";
 var bodyImg = new Image();
-bodyImg.src = "IMG/JS/body.png";
+bodyImg.src = "SRC/IMG/JS/body.png";
 var bodyHorizontalImg = new Image();
-bodyHorizontalImg.src = "IMG/JS/body-horizontal.png"
+bodyHorizontalImg.src = "SRC/IMG/JS/body-horizontal.png"
 var bodyVerticalImg = new Image();
-bodyVerticalImg.src = "IMG/JS/body-vertical.png"
+bodyVerticalImg.src = "SRC/IMG/JS/body-vertical.png"
 var tailUpImg = new Image();
-tailUpImg.src = "IMG/JS/tail-up.png";
+tailUpImg.src = "SRC/IMG/JS/tail-up.png";
 var tailDownImg = new Image();
-tailDownImg.src = "IMG/JS/tail-down.png";
+tailDownImg.src = "SRC/IMG/JS/tail-down.png";
 var tailLeftImg = new Image();
-tailLeftImg.src = "IMG/JS/tail-left.png";
+tailLeftImg.src = "SRC/IMG/JS/tail-left.png";
 var tailRightImg = new Image();
-tailRightImg.src = "IMG/JS/tail-right.png";
+tailRightImg.src = "SRC/IMG/JS/tail-right.png";
 
 // Initialize canvas
 var canvas = document.getElementById("canvas");

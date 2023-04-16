@@ -173,12 +173,6 @@ for (var i = 0; i < snake.length; i++) {
 		} else if ((previousSnakePart.y < snakePart.y && nextSnakePart.y > snakePart.y) ||
 			(previousSnakePart.y > snakePart.y && nextSnakePart.y < snakePart.y)) {
 			img = bodyVerticalImg;
-		} else if ((previousSnakePart.x < snakePart.x && nextSnakePart.y < snakePart.y) ||
-			(previousSnakePart.y < snakePart.y && nextSnakePart.x < snakePart.x)) {
-			img = bodyImg;
-		} else if ((previousSnakePart.x > snakePart.x && nextSnakePart.y > snakePart.y) ||
-			(previousSnakePart.y > snakePart.y && nextSnakePart.x > snakePart.x)) {
-			img = bodyImg;
 		}
 	}
 ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);

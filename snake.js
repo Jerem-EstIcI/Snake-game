@@ -213,7 +213,7 @@ function draw() {
 	for (var i = 0; i < snake.length; i++) {
 		var snakePart = snake[i];
 		var img;
-		//snale tail
+		//snale head
 		if (i === 0) {
 			switch (direction) {
 				case "right":

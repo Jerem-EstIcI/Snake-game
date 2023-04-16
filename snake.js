@@ -299,13 +299,13 @@ document.addEventListener("keydown", function(event) {
 });
 
 document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 81 && direction != "right") { // touche Q
+	if (event.keyCode == 81 && direction != "right") { 
 		direction = "left";
-	} else if (event.keyCode == 90 && direction != "down") { // touche Z
+	} else if (event.keyCode == 90 && direction != "down") { 
 		direction = "up";
-	} else if (event.keyCode == 68 && direction != "left") { // touche D
+	} else if (event.keyCode == 68 && direction != "left") { 
 		direction = "right";
-	} else if (event.keyCode == 83 && direction != "up") { // touche S
+	} else if (event.keyCode == 83 && direction != "up") { 
 		direction = "down";
 	}
 });

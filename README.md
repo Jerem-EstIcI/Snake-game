@@ -62,7 +62,7 @@ HTML/Javascript/CSS
 - [x] tail snake texture
 - [x] Background texture
 - [x] K-UP/DOWN/RIGHT/LEFT texture
-- [ ] ZQSD texture
+- [ ] ZQSD & AWSD texture
 
 #### 1.2
 

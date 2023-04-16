@@ -25,6 +25,7 @@ HTML/Javascript/CSS
 #### 1.1
 - [x] Score 
 - [ ] Best score **(option)**
+- [ ] Timer **(option)**
 
 #### 1.2
 - [x] Restart button 

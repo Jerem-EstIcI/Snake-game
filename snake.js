@@ -106,17 +106,21 @@ if (snake.length > snakeLength) {
 // Get start button
 var startButton = document.getElementById("start");
 
+// Get restart button
+var restartButton = document.getElementById("restart");
+
 // Add event listener to start button
 startButton.addEventListener("click", function() {
   // Hide start button
   startButton.style.display = "none";
+  // Show restart button
+  restartButton.style.display = "block";
   // Start game loop
   gameLoop = setInterval(function() {
     update();
     draw();
   }, speed);
 });
-
 // Draw game
 function draw() {
 // Clear canvas

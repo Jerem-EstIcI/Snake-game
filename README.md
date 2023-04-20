@@ -101,10 +101,10 @@ HTML/Javascript/CSS
 
 #### 3.1
 
-- [ ] Navigation bar
+- [x] Navigation bar
 - [ ] Keyboard key 
 - [ ] Goal of the game
-- [ ] Music **(option)**
+- [x] Music **(option)**
 ---
 
 ## CSS

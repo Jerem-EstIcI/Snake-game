@@ -33,13 +33,13 @@ HTML/Javascript/CSS
 - [x] Makes the Start button disappear if clicked **(option)**
 - [x] Makes the Restart button appear if the Start button clicked **(option)**
 - [ ] Can start with the keyboard key **(option)**
+- [ ] Starts the music if the button Start is clicked and end if the game is over **(option)**
 
 #### 1.3
 - [x] Make sure that the apple does not appear twice in the same place **(option)**
 - [x] Can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
 - [ ] Can change speed before starting **(option)**
 - [ ] Save the color of the snake **(option)**
-
 
 ### 2
 - [ ] Working 1v1 game

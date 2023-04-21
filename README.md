@@ -3,7 +3,7 @@
 **[Site](https://jerem-estici.github.io/Snake-game-html/)**
 
 ## Ressource utilisées
-[Pour faire des README](https://www.youtube.com/watch?v=4lg3YyugRZQ&ab_channel=e-genieclimatique/) et [générateur de readme](https://readme.so/fr/editor)
+[Pour faire des README](https://www.youtube.com/watch?v=4lg3YyugRZQ&ab_channel=e-genieclimatique/) et [générateur de README](https://readme.so/fr/editor)
 <br>
 [Documentation pour le site](https://developer.mozilla.org/fr/)
 <br>

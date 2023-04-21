@@ -54,7 +54,7 @@ HTML/Javascript/CSS
 
   
 ###  1
-- [ ] All texture for the game
+- [x] All texture for the game
 - [x] All texture for Snake 
 
 #### 1.1

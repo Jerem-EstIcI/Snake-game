@@ -1,51 +1,77 @@
+/* General all pages combined */
+
 body{
 	background-color: #FEF5E7;
 	font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
+#white-band {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5em;
+  background-color: white;
+  z-index: -1;
+}
 
-
-.titremenu {
-	  	padding: 0;
-    	margin: auto;
-    	display: block;
-		width: 200px;
+#black-band {
+	position: fixed;
+	top: 3.5em;
+	left: 0;
+	width: 100%;
+	height: 0.3em;
+	background-color: black;
+	z-index: -1;
 }
 
 ul.navbar {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	top: 2em;
-	left: 1em;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 ul.navbar li {
-	float:left;
-	background: #C1C1C1;
-	margin: 0.5em 0;
-	padding: 0.3em;
-	border-right: 0.3em solid black;
+  display: inline-block; 
+  background: #C1C1C1;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 0.3em solid black;
 }
 ul.navbar li {
-	display:block;
-	width:150px;height:25px;
-	float:left;
-	margin:5px;
+  width: 150px;
+  height: 25px;
+  margin: 5px;
 }
-	
+
 ul.navbar a {
-	text-decoration: none;
+  text-decoration: none;
 }
-	a:link {
-		color: black;
+a:link {
+  color: black;
 }
-	a:visited {
-		color: black;
+a:visited {
+  color: black;
+}
+
+/* index page */
+
+
+.titleIndex {
+	  	padding: 0;
+    	margin: auto;
+    	display: block;
+		width: 400px;
+		font-size: 4em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+		color:white;
 }
 
 
-
+/* solosnake and 1v1snake page if same */
 
 #solojs {
 	border: 20px solid black;
@@ -57,19 +83,26 @@ ul.navbar a {
 		url('SRC/IMG/HTML/background.png');	
 }
 
-.commandes {
-	position: absolute;
-	margin-top: 140px;
-}
-
-.imgcommandes {
+.titlecommandSnake {
 	position: absolute;
 	margin-top: 180px;
+	font-size: 2em;
 }
 
-.partcommandes {
+.imgcommandSnake {
 	position: absolute;
-	margin-top: 280px;
+	margin-top: 260px;
+}
+
+.textcommandSnake {
+	position: absolute;
+	margin-top: 230px;
+}
+
+.infotextcommandSnake {
+	position: absolute;
+	margin-top: 370px;
+	font-size: 0.6em;
 }
 
 #restart {
@@ -86,40 +119,13 @@ ul.navbar a {
 	width: 300px;
 }
 
-.titre {
+.titleSnake {
 	position: absolute;
 	margin-top: 80px;
+	font-size: 2.5em;
+	text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+	color:white;
 }
 
-ul.navbarsnake {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	top: 2em;
-	left: 1em;
-	position: absolute;
-}
 
-ul.navbarsnake li {
-	float:left;
-	background: #C1C1C1;
-	margin: 0.5em 0;
-	padding: 0.3em;
-	border-right: 0.3em solid black;
-}
-ul.navbarsnake li {
-	display:block;
-	width:150px;height:25px;
-	float:left;
-	margin:5px;
-}
-	
-ul.navbarsnake a {
-	text-decoration: none;
-}
-	a:link {
-		color: black;
-}
-	a:visited {
-		color: black;
-}
+/* 1v1snake page if its different from solosnake */

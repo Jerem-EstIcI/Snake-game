@@ -4,9 +4,12 @@
 
 ## Ressource utilisées
 [Pour faire des README](https://www.youtube.com/watch?v=4lg3YyugRZQ&ab_channel=e-genieclimatique/) 
-<br/>
+<br>
 [Documentation pour le site](https://developer.mozilla.org/fr/)
-
+<br>
+[Générateur de textes customs](https://textcraft.net)
+<br>
+[Générateur de gif a partir d'images](ezgif.com)
 ## Language 
 HTML/Javascript/CSS
 

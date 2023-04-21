@@ -31,7 +31,7 @@ var cornerBottomRightImg = new Image();
 cornerBottomRightImg.src = "SRC/IMG/JS/corner-bottom-right.png";
 
 // Initialize canvas
-var canvas = document.getElementById("canvas");
+var canvas = document.getElementById("solojs");
 var ctx = canvas.getContext("2d");
 
 

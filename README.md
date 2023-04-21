@@ -94,7 +94,7 @@ HTML/Javascript/CSS
 #### 2.1
 
 - [x] Navigation bar
-- [ ] Keyboard key 
+- [x] Keyboard key 
 - [ ] Goal of the game
 - [ ] Music **(option)**
 

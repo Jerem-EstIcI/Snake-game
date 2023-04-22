@@ -89,26 +89,29 @@ a:visited {
 	right: 0;
 	margin: auto;
 }
+.titleSnake {
+	font-size: 2.5em;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+	color:white;
+}
 
-.titlecommandSnake {
-	position: absolute;
-	margin-top: 180px;
+.title2Snake {
+	top: 6em;
 	font-size: 2em;
 }
 
-.imgcommandSnake {
-	position: absolute;
-	margin-top: 260px;
+.imgSnake {
+	top: 6em;
 }
 
-.textcommandSnake {
-	position: absolute;
-	margin-top: 230px;
+.textSnake {
+	top: 6em;
 }
 
-.infotextcommandSnake {
-	position: absolute;
-	margin-top: 370px;
+.infotextSnake {
+	top: 6em;
 	font-size: 0.6em;
 }
 
@@ -138,15 +141,6 @@ a:visited {
 	transform: translateY(-50%);
 }
 
-.titleSnake {
-	position: absolute;
-	margin-top: 80px;
-	font-size: 2.5em;
-	text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
-	color:white;
-}
-
 
 /* 1v1snake page if its different from solosnake */
-
 

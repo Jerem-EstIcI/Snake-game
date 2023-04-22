@@ -22,7 +22,7 @@ ul.navbar li {
   background: #C1C1C1;
   margin: 0.5em 0;
   padding: 0.3em;
-  border-right: 0.3em solid black;
+  border: 0.1em solid black;
 }
 ul.navbar li {
   width: 150px;

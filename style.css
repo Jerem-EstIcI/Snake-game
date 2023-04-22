@@ -7,7 +7,7 @@ body{
 
 ul.navbar {
   position: fixed;
-  top: 1em;
+  top: 0.5em;
   left: 0;
   width: 100%;
   list-style-type: none;
@@ -45,17 +45,17 @@ a:visited {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5em;
+  height: 4em;
   background-color: white;
   z-index: 1;
 }
 
 #black-band {
 	position: fixed;
-	top: 5em;
+	top: 4em;
 	left: 0;
 	width: 100%;
-	height: 0.3em;
+	height: 0.15em;
 	background-color: black;
 	z-index: 1;
 }
@@ -84,7 +84,7 @@ a:visited {
 	height: 600px;
 	width: 600px;
 	background-image: url('SRC/IMG/HTML/background.png');
-	top: 6em;
+	top: 5em;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -116,12 +116,13 @@ a:visited {
 }
 
 #restart {
+	border: 0.1em solid black;
 	position: fixed;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
-	top: 57em;
+	top: 53.25em;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -129,12 +130,13 @@ a:visited {
 }
 
 #start {
+	border: 0.1em solid black;
 	position: fixed;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
-	top: 57em;
+	top: 53.25em;
 	left: 0;
 	right: 0;
 	margin: auto;

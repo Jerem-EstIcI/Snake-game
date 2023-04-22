@@ -79,13 +79,15 @@ a:visited {
 /* solosnake and 1v1snake page if same */
 
 #solojs {
+	position: fixed;
 	border: 20px solid black;
-    	margin: auto;
-    	display: block;
 	height: 600px;
 	width: 600px;
-	background-image:
-		url('SRC/IMG/HTML/background.png');	
+	background-image: url('SRC/IMG/HTML/background.png');
+	top: 6em;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .titlecommandSnake {
@@ -111,17 +113,29 @@ a:visited {
 }
 
 #restart {
+	position: fixed;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
+	top: 57em;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform: translateY(-50%);
 }
 
 #start {
+	position: fixed;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
+	top: 57em;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform: translateY(-50%);
 }
 
 .titleSnake {
@@ -134,4 +148,5 @@ a:visited {
 
 
 /* 1v1snake page if its different from solosnake */
+
 

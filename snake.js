@@ -299,6 +299,7 @@ function appleOnSnake() {
 }
 
 // Handle key events
+//Arrow azerty & qwerty
 document.addEventListener("keydown", function(event) {
 	if (event.keyCode == 37 && direction != "right") {
 		direction = "left";
@@ -310,11 +311,23 @@ document.addEventListener("keydown", function(event) {
 		direction = "down";
 	}
 });
-
+//azerty ZQSD
 document.addEventListener("keydown", function(event) {
 	if (event.keyCode == 81 && direction != "right") { 
 		direction = "left";
 	} else if (event.keyCode == 90 && direction != "down") { 
+		direction = "up";
+	} else if (event.keyCode == 68 && direction != "left") { 
+		direction = "right";
+	} else if (event.keyCode == 83 && direction != "up") { 
+		direction = "down";
+	}
+});
+//qwerty AWSD
+document.addEventListener("keydown", function(event) {
+	if (event.keyCode == 65 && direction != "right") { 
+		direction = "left";
+	} else if (event.keyCode == 87 && direction != "down") { 
 		direction = "up";
 	} else if (event.keyCode == 68 && direction != "left") { 
 		direction = "right";

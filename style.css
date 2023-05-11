@@ -84,6 +84,10 @@ a:visited {
 		text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
 		color:white;
 }
+	
+.textIndex {
+	font-size:1,5em;
+}
 
 
 /* solosnake and 1v1snake page if same */

@@ -73,6 +73,16 @@ a:visited {
 		margin-block-end: 0.67em;
 		text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
 		color:white;
+.title2Index {
+	  	padding: 0;
+    	margin: auto;
+    	display: block;
+		width: 400px;
+		font-size: 2.5em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+		color:white;
 }
 
 

@@ -1,0 +1,162 @@
+/* General all pages combined */
+
+body{
+	background-color: #FEF5E7;
+	font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+ul.navbar {
+  position: fixed;
+  top: 0.5em;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+ul.navbar li {
+  display: inline-block; 
+  background: #C1C1C1;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border: 0.1em solid black;
+}
+ul.navbar li {
+  width: 150px;
+  height: 25px;
+  margin: 5px;
+}
+
+ul.navbar a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+#white-band {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: white;
+  z-index: 1;
+}
+
+#black-band {
+	position: fixed;
+	top: 4em;
+	left: 0;
+	width: 100%;
+	height: 0.15em;
+	background-color: black;
+	z-index: 1;
+}
+
+/* index page */
+
+
+.titleIndex {
+	  	padding: 0;
+    	margin: auto;
+    	display: block;
+		width: 400px;
+		font-size: 4em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+		color:white;
+.title2Index {
+	  	padding: 0;
+    	margin: auto;
+    	display: block;
+		width: 400px;
+		font-size: 2.5em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+		color:white;
+}
+	
+.textIndex {
+	font-size:1,5em;
+}
+
+
+/* solosnake and 1v1snake page if same */
+
+#solojs {
+	position: fixed;
+	border: 20px solid black;
+	height: 600px;
+	width: 600px;
+	background-image: url('SRC/IMG/HTML/background.png');
+	top: 5em;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.titleSnake {
+	font-size: 2.5em;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+	color:white;
+}
+
+.title2Snake {
+	top: 6em;
+	font-size: 2em;
+}
+
+.imgSnake {
+	top: 6em;
+}
+
+.textSnake {
+	top: 6em;
+}
+
+.infotextSnake {
+	top: 6em;
+	font-size: 0.6em;
+}
+
+#restart {
+	border: 0.1em solid black;
+	position: fixed;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	top: 53.25em;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform: translateY(-50%);
+}
+
+#start {
+	border: 0.1em solid black;
+	position: fixed;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	top: 53.25em;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform: translateY(-50%);
+}
+
+
+/* 1v1snake page if its different from solosnake */
+

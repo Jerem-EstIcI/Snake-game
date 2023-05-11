@@ -1,4 +1,4 @@
-// Load images
+// Load imagess
 var appleImg = new Image();
 appleImg.src = "SRC/IMG/JS/apple.png";
 var headUpImg = new Image();

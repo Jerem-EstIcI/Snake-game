@@ -89,6 +89,7 @@ HTML/Javascript/CSS
 
 - [x] Navigation bar
 - [ ] Info 
+- [x] Goal of the game
 
 ### 2
 
@@ -98,7 +99,6 @@ HTML/Javascript/CSS
 
 - [x] Navigation bar
 - [x] Keyboard key 
-- [x] Goal of the game
 - [ ] Music **(option)**
 
 ### 3 

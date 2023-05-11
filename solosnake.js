@@ -43,7 +43,7 @@ var canvasHeight = canvas.height;
 var tileCount = 15;
 var snake = [];
 var snakeLength = 3;
-var speed = 125
+var speed = 115
 var apple = {
 	x: 0,
 	y: 0

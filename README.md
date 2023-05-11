@@ -98,7 +98,7 @@ HTML/Javascript/CSS
 
 - [x] Navigation bar
 - [x] Keyboard key 
-- [ ] Goal of the game
+- [x] Goal of the game
 - [ ] Music **(option)**
 
 ### 3 

@@ -89,13 +89,15 @@ a:visited {
 }
 
 .textIndexbut {
-	font-size:1.50em;
-	width:55em;
+	font-size: 1.50em;
+	width: 55em;
 	margin-block-end: 10em;
-	background-Color: white;
-	padding:0.5em;
+	background-color: white;
+	padding: 0.5em;
 	border: 0.1em solid black; 
+	border-radius: 0.7em;
 }
+
 
 
 /* solosnake and 1v1snake page if same */

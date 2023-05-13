@@ -42,6 +42,11 @@ a:visited {
 .navbar li {
   position: relative;
 }
+
+ul.navbar a:not(.active):hover {
+	font-weight: bold;
+}
+
 .navbar li::before,
 .navbar li::after {
   content: "";
@@ -85,6 +90,9 @@ a:visited {
 	z-index: 1;
 }
 
+.active {
+	font-weight: bold;
+}
 /* index page */
 
 

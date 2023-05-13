@@ -16,20 +16,19 @@ ul.navbar {
   text-align: center;
   z-index: 2;
 }
-
 ul.navbar li {
   display: inline-block; 
   background: #C1C1C1;
   margin: 0.5em 0;
   padding: 0.3em;
   border: 0.1em solid black;
+  border-radius: 0.6em;
 }
 ul.navbar li {
   width: 150px;
   height: 25px;
   margin: 5px;
 }
-
 ul.navbar a {
   text-decoration: none;
 }
@@ -38,6 +37,32 @@ a:link {
 }
 a:visited {
   color: black;
+}
+
+.navbar li {
+  position: relative;
+}
+.navbar li::before,
+.navbar li::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  width: 0;
+  height: 0.5px;
+  background-color: black;
+  transition: width 1s cubic-bezier(0.65, 0.05, 0.39, 1.38);
+}
+.navbar li::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar li::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+.navbar li:hover::before,
+.navbar li:hover::after {
+  width: 50%;
 }
 
 #white-band {
@@ -112,6 +137,7 @@ a:visited {
 	left: 0;
 	right: 0;
 	margin: auto;
+	border-radius: 2em;
 }
 .titleSnake {
 	font-size: 2.5em;
@@ -151,6 +177,29 @@ a:visited {
 	right: 0;
 	margin: auto;
 	transform: translateY(-50%);
+	border-radius: 1em;
+}
+#restart::before,
+#restart::after {
+  content: "";
+  position: absolute;
+  bottom: 1.7px;
+  width: 0;
+  height: 0.5px;
+  background-color: black;
+  transition: width 1.5s ease-out;
+}
+#restart::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+#restart::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+#restart:hover::before,
+#restart:hover::after {
+  width: 35%;
 }
 
 #start {
@@ -165,8 +214,30 @@ a:visited {
 	right: 0;
 	margin: auto;
 	transform: translateY(-50%);
+	border-radius: 1em;
 }
-
+#start::before,
+#start::after {
+  content: "";
+  position: absolute;
+  bottom: 1.7px;
+  width: 0;
+  height: 0.5px;
+  background-color: black;
+  transition: width 1.5s ease-out;
+}
+#start::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+#start::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+#start:hover::before,
+#start:hover::after {
+  width: 35%;
+}
 
 /* 1v1snake page if its different from solosnake */
 

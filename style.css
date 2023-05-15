@@ -62,7 +62,7 @@ ul.navbar a:not(.active):hover {
   transform: translateX(-50%);
 }
 .navbar li::after {
-  right: 50%;
+  right: 50%;but
   transform: translateX(50%);
 }
 .navbar li:hover::before,
@@ -123,7 +123,7 @@ ul.navbar a:not(.active):hover {
 
 .textIndexbut {
 	font-size: 1.50em;
-	width: 55em;
+	width: 85%;
 	margin-block-end: 10em;
 	background-color: white;
 	padding: 0.5em;

@@ -26,7 +26,7 @@ body{
 
 ul.navbar {
   position: fixed;
-  top: 0.5em;
+  top: -0em;
   left: 0;
   width: 100%;
   list-style-type: none;
@@ -34,6 +34,8 @@ ul.navbar {
   margin: 0;
   text-align: center;
   z-index: 2;
+  background-color:white;
+  border: 0.1em solid black;
 }
 ul.navbar li {
   display: inline-block; 
@@ -89,25 +91,7 @@ ul.navbar a:not(.active):hover {
   width: 50%;
 }
 
-#white-band {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4em;
-  background-color: white;
-  z-index: 1;
-}
 
-#black-band {
-	position: fixed;
-	top: 4em;
-	left: 0;
-	width: 100%;
-	height: 0.15em;
-	background-color: black;
-	z-index: 1;
-}
 
 .active {
 	font-weight: bold;
@@ -154,7 +138,7 @@ ul.navbar a:not(.active):hover {
 
 #solojs {
   position: fixed;
-  top: 5em;
+  top: 3.5em;
   left: 0;
   right: 0;
   margin: auto;
@@ -202,7 +186,7 @@ ul.navbar a:not(.active):hover {
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
-	top: 43.25vw;
+	top: 46.1vw;
 	left: 0;
 	right: 0;
 	margin: auto;

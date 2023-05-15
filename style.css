@@ -5,6 +5,7 @@
 	top: 6em;
 }
 .pagesindex{
+  top: 6em;
 }
 .contentsolo{
 }
@@ -102,7 +103,7 @@ ul.navbar a:not(.active):hover {
 .titleIndex {
 		text-align: center;
 		font-size: 5em;
-		margin-block-start: 0.67em;
+		margin-block-start: 1.67em;
 		margin-block-end: 0.67em;
 		text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
 		color:white;
@@ -153,8 +154,6 @@ ul.navbar a:not(.active):hover {
   background-size: cover;
   z-index: 1;
 }
-
-
 
 
 .titleSnake {

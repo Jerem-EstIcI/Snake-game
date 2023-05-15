@@ -1,6 +1,8 @@
 .pagesolo{
+	top: 6em;
 }
 .page1v1{
+	top: 6em;
 }
 .pagesindex{
 }
@@ -134,11 +136,9 @@ ul.navbar a:not(.active):hover {
 	font-size:1.75em;
 }
 
-.divIndexbut {
-	padding-left: 8em;
-}
-
 .textIndexbut {
+	display: block;
+	margin: 0 auto;
 	font-size: 1.50em;
 	width: 85%;
 	margin-block-end: 10em;
@@ -153,17 +153,26 @@ ul.navbar a:not(.active):hover {
 /* solosnake and 1v1snake page if same */
 
 #solojs {
-	position: fixed;
-	border: 20px solid black;
-	height: 600px;
-	width: 600px;
-	background-image: url('SRC/IMG/HTML/background.png');
-	top: 5em;
-	left: 0;
-	right: 0;
-	margin: auto;
-	border-radius: 2em;
+  position: fixed;
+  top: 5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1.3vw solid black; /* Utilisation de vw pour une bordure relative à la vue */
+  border-radius: 2vw;
+  height: 80vh;
+  width: 80vh;
+  max-height: calc(100vh - 10em);
+  max-width: calc(100vh - 10em);
+  aspect-ratio: 1/1;
+  background-image: url('SRC/IMG/HTML/background.png');
+  background-size: cover;
+  z-index: 1;
 }
+
+
+
+
 .titleSnake {
 	font-size: 2.5em;
 	margin-block-start: 0.67em;
@@ -173,20 +182,16 @@ ul.navbar a:not(.active):hover {
 }
 
 .title2Snake {
-	top: 6em;
 	font-size: 2em;
 }
 
 .imgSnake {
-	top: 6em;
 }
 
 .textSnake {
-	top: 6em;
 }
 
 .infotextSnake {
-	top: 6em;
 	font-size: 0.6em;
 }
 
@@ -197,12 +202,13 @@ ul.navbar a:not(.active):hover {
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
-	top: 53.25em;
+	top: 43.25vw;
 	left: 0;
 	right: 0;
 	margin: auto;
 	transform: translateY(-50%);
 	border-radius: 1em;
+	z-index: 2;
 }
 #restart::before,
 #restart::after {
@@ -234,13 +240,16 @@ ul.navbar a:not(.active):hover {
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
-	top: 53.25em;
+	top: 46.1vw;
 	left: 0;
 	right: 0;
 	margin: auto;
 	transform: translateY(-50%);
 	border-radius: 1em;
+	z-index: 2;
 }
+
+
 #start::before,
 #start::after {
   content: "";

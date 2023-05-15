@@ -7,35 +7,45 @@
 	<title>Snake Game solo</title>
 </head>
 <body>
-	<audio autoplay loop>
- 		<source src="SRC/MUSIC/Musicsolo.mp3" type="audio/mp3">
-	</audio>
-	<div id="white-band"></div>
-	<div id="black-band"></div>
-		<ul class="navbar">
-			<li> 
-				<a href="index.html">Menu</a>
-			</li>
-			<li> 
-				<a class="active" href="solosnake.html">1 Joueur</a>
-			</li>
-			<li> 
-				<a href="1v1snake.html">2 Joueurs</a>
-			</li>
-			<li> 
-				<a href="https://github.com/Jerem-EstIcI/Snake-game-html" target="_blank">Page Github</a>
-			</li>
-		</ul>
-	<br><br><br><br>
-	<h1 class="titleSnake">Snake 1 Joueur</h1>
-		<h2 class="title2Snake">Pour se deplacer</h2>
-			<p class="textSnake"> Utilisez les flèches ou ZQSD. </p>
-			<img class="imgSnake" src="SRC/IMG/HTML/toucheK-AZERTY.gif" alt="touche">
-			<p class="infotextSnake"> Pour clavier azerty sinon pour se deplacer awsd. </p>
-					
-	<canvas id="solojs" width="480" height="480"></canvas>
-		<button id="start">Commencer</button>
-		<button id="restart" style="display: none;">Recommencer</button>	
+	<section class="pagesolo">
+	
+		<audio autoplay loop>
+			<source src="SRC/MUSIC/Musicsolo.mp3" type="audio/mp3">
+		</audio>
+		<section class="navpanel">
+			<div id="white-band"></div>
+			<div id="black-band"></div>
+				<ul class="navbar">
+					<li> 
+						<a href="index.html">Menu</a>
+					</li>
+					<li> 
+						<a class="active" href="solosnake.html">1 Joueur</a>
+					</li>
+					<li> 
+						<a href="1v1snake.html">2 Joueurs</a>
+					</li>
+					<li> 
+						<a href="https://github.com/Jerem-EstIcI/Snake-game-html" target="_blank">Page Github</a>
+					</li>
+				</ul>
+		</section>
+
+		<br><br><br><br>
+
+		<section class="contentsolo">
+			<h1 class="titleSnake">Snake 1 Joueur</h1>
+				<h2 class="title2Snake">Pour se deplacer</h2>
+					<p class="textSnake"> Utilisez les flèches ou ZQSD. </p>
+					<img class="imgSnake" src="SRC/IMG/HTML/toucheK-AZERTY.gif" alt="touche">
+					<p class="infotextSnake"> Pour clavier azerty sinon pour se deplacer awsd. </p>
+						
+			<canvas id="solojs" width="480" height="480"></canvas>
+				<button id="start">Commencer</button>
+				<button id="restart" style="display: none;">Recommencer</button>
+		</section>
+	</section>
+	
 	<script src="solosnake.js"></script>
 </body>
 </html>

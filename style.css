@@ -1,3 +1,20 @@
+.pagesolo{
+}
+.page1v1{
+}
+.pagesindex{
+}
+.contentsolo{
+}
+
+.content1v1{
+}
+
+.contentindex{
+}
+
+.navpanel{
+}
 /* General all pages combined */
 
 body{
@@ -62,7 +79,7 @@ ul.navbar a:not(.active):hover {
   transform: translateX(-50%);
 }
 .navbar li::after {
-  right: 50%;but
+  right: 50%;
   transform: translateX(50%);
 }
 .navbar li:hover::before,

@@ -93,7 +93,7 @@ HTML/Javascript/CSS
 
 ### 2
 
-- [ ] One player game page
+- [x] One player game page
 
 #### 2.1
 

@@ -8,9 +8,11 @@
   top: 6em;
 }
 .contentsolo{
+	width:25vw;
 }
 
 .content1v1{
+	width:25vw;
 }
 
 .contentindex{
@@ -138,21 +140,23 @@ ul.navbar a:not(.active):hover {
 /* solosnake and 1v1snake page if same */
 
 #solojs {
-  position: fixed;
-  top: 3.5em;
-  left: 0;
-  right: 0;
-  margin: auto;
-  border: 1.3vw solid black; /* Utilisation de vw pour une bordure relative à la vue */
-  border-radius: 2vw;
-  height: 80vh;
-  width: 80vh;
-  max-height: calc(100vh - 10em);
-  max-width: calc(100vh - 10em);
-  aspect-ratio: 1/1;
-  background-image: url('SRC/IMG/HTML/background.png');
-  background-size: cover;
-  z-index: 1;
+	position: fixed;
+	top: 3.5em;
+	left: 5em;
+	right: 0;
+	margin: auto;
+	border: 1.3vw solid black; /* Utilisation de vw pour une bordure relative à la vue */
+	border-radius: 2vw;
+	height: 80vh;
+	width: 80vh;
+	max-height: calc(100vh - 9em);
+	max-width: calc(100vh - 9em);
+	min-height: 40vh;
+	min-width: 40vh;
+	aspect-ratio: 1/1;
+	background-image: url('SRC/IMG/HTML/background.png');
+	background-size: cover;
+	z-index: 1;
 }
 
 
@@ -186,7 +190,7 @@ ul.navbar a:not(.active):hover {
 	margin-right: auto;
 	width: 300px;
 	top: 46.1vw;
-	left: 0;
+	left: 5em;
 	right: 0;
 	margin: auto;
 	transform: translateY(-50%);
@@ -224,7 +228,7 @@ ul.navbar a:not(.active):hover {
 	margin-right: auto;
 	width: 300px;
 	top: 46.1vw;
-	left: 0;
+	left: 5em;
 	right: 0;
 	margin: auto;
 	transform: translateY(-50%);

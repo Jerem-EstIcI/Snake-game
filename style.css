@@ -145,7 +145,7 @@ ul.navbar a:not(.active):hover {
 	left: 5em;
 	right: 0;
 	margin: auto;
-	border: 1.3vw solid black; /* Utilisation de vw pour une bordure relative à la vue */
+	border: 1.3vw solid black;
 	border-radius: 2vw;
 	height: 80vh;
 	width: 80vh;

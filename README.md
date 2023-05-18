@@ -60,7 +60,7 @@ HTML/Javascript/CSS
 - [x] All texture for Snake 
 
 #### 1.1
-- [ ] page background (menu...) **(option)**
+- [x] page background (menu...) **(option)**
 - [x] Logo
 - [x] Apple texture 
 - [x] Head snake texture
@@ -83,12 +83,11 @@ HTML/Javascript/CSS
 
 ### 1 
 
-- [ ] Menu page
+- [x] Menu page
 
 #### 1.1
 
 - [x] Navigation bar
-- [ ] Info 
 - [x] Goal of the game
 
 ### 2
@@ -108,7 +107,7 @@ HTML/Javascript/CSS
 #### 3.1
 
 - [x] Navigation bar
-- [ ] Keyboard key 
+- [x] Keyboard key 
 - [ ] Goal of the game
 - [x] Music **(option)**
 ---

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/png" href="SRC/IMG/HTML/logo.png">
-	<title>Snake Game 1v1</title>
-</head>
-<body>
-	<section class="page1v1">
-		<audio autoplay loop>
-			<source src=".../MUSIC/Music1v1.mp3" type="audio/mp3">
-		</audio>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="SRC/IMG/HTML/logo.png">
+		<title>Snake Game 1v1</title>
+	</head>
+	
+	<body>
+		<section class="page1v1">
+			<audio autoplay loop>
+				<source src=".../MUSIC/Music1v1.mp3" type="audio/mp3">
+			</audio>
 		
-		<section class="navpanel">
+			<section class="navpanel">
 				<ul class="navbar">
 					<li> 
 						<a href="index.html">Menu</a>
@@ -27,24 +29,25 @@
 						<a href="https://github.com/Jerem-EstIcI/Snake-game-html" target="_blank">Page Github</a>
 					</li>
 				</ul>
-		</section>
+			</section>
 		
 		<br><br><br><br>
 		
-		<section class="content1v1">
-			<h1 class="titleSnake">Snake 2 Joueurs</h1>
-				<h2 class="title2Snake">Pour se deplacer</h2>
-				<p class="textSnake"> Utilisez les flèches pour le joueur 1<br>Et ZQSD pour le joueur 2. </p>
-					<img class="imgSnake" src="SRC/IMG/HTML/toucheK-AZERTY.gif" alt="touche">
-					<p class="infotextSnake"> Pour clavier azerty sinon pour se deplacer awsd. </p>
-		</section>
+			<section class="content1v1">
+				<h1 class="titleSnake">Snake 2 Joueurs</h1>
+					<h2 class="title2Snake">Pour se deplacer</h2>
+						<p class="textSnake"> Utilisez les flèches pour le joueur 1<br>Et ZQSD pour le joueur 2. </p>
+						<img class="imgSnake" src="SRC/IMG/HTML/toucheK-AZERTY.gif" alt="touche">
+						<p class="infotextSnake"> Pour clavier azerty sinon pour se deplacer awsd. </p>
+			</section>
 		
-				<canvas id="1v1snake" width="480" height="480"></canvas>
+			<canvas id="1v1snake" width="480" height="480"></canvas>
 				<button id="start">Commencer</button>
 				<button id="restart" style="display: none;">Recommencer</button>
 				
-	</section>
-	<script src="1v1snake.js"></script>
-	<script src="page.js"></script>
-</body>
+		</section>
+		<script src="1v1snake.js"></script>
+		<script src="page.js"></script>
+	</body>
+	
 </html>

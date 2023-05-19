@@ -269,17 +269,18 @@ ul.navbar a:not(.active):hover {
 
 /* 1v1snake page */
 .divcanva {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
+	display: inline-block;
+	position: fixed;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 9em;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
 }
 
 #snakeJ1 {
-	position: fixed;
-	top: 7em;
-	left: 0;
-	right: 65vh;
-	margin: auto;
 	border: 0.35vw solid black;
 	border-radius: 2vw;
 	height: 80vh;
@@ -291,15 +292,9 @@ ul.navbar a:not(.active):hover {
 	aspect-ratio: 1/1;
 	background-image: url('SRC/IMG/HTML/background-snake.png');
 	background-size: cover;
-	z-index: 1;
 }
 
 #snakeJ2 {
-	position: fixed;
-	top: 7em;
-	left: 65vh;
-	right: 0;
-	margin: auto;
 	border: 0.35vw solid black;
 	border-radius: 2vw;
 	height: 80vh;
@@ -311,7 +306,6 @@ ul.navbar a:not(.active):hover {
 	aspect-ratio: 1/1;
 	background-image: url('SRC/IMG/HTML/background-snake.png');
 	background-size: cover;
-	z-index: 1;
 }
 
 .page1v1{

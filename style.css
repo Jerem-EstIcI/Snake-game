@@ -281,8 +281,8 @@ ul.navbar a:not(.active):hover {
 }
 
 #snakeJ1 {
-	border: 0.35vw solid black;
-	border-radius: 2vw;
+	border: 0.7vw solid black;
+	border-radius: 1.2vw;
 	height: 80vh;
 	width: 80vh;
 	max-height: calc(65vh - 9em);
@@ -295,8 +295,8 @@ ul.navbar a:not(.active):hover {
 }
 
 #snakeJ2 {
-	border: 0.35vw solid black;
-	border-radius: 2vw;
+	border: 0.7vw solid black;
+	border-radius: 1.2vw;
 	height: 80vh;
 	width: 80vh;
 	max-height: calc(65vh - 9em);

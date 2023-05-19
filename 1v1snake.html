@@ -23,7 +23,7 @@
 						<a href="solosnake.html">1 Joueur</a>
 					</li>	
 					<li> 
-						<a class="active" href="1v1snake.html">2 Joueurs</a>
+						<a class="active" href="1v1snake.html">2 Joueurs (Local)</a>
 					</li>	
 					<li> 
 						<a href="https://github.com/Jerem-EstIcI/Snake-game-html" target="_blank">Page Github</a>
@@ -41,12 +41,16 @@
 						<p class="infotextSnake"> Pour clavier azerty sinon pour se deplacer awsd. </p>
 			</section>
 		
-			<canvas id="1v1snake" width="480" height="480"></canvas>
+			<div class="divcanva">
+				<canvas id="snakeJ1" width="480" height="480"></canvas>
+				<canvas id="snakeJ2" width="480" height="480"></canvas>
+			</div>
 				<button id="start">Commencer</button>
 				<button id="restart" style="display: none;">Recommencer</button>
 				
 		</section>
-		<script src="1v1snake.js"></script>
+		<script src="1v1snakej1.js"></script>
+		<script src="1v1snakej2.js"></script>
 		<script src="page.js"></script>
 	</body>
 	

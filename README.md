@@ -47,7 +47,7 @@ HTML/Javascript/CSS
 - [ ] Save the color of the snake **(option)**
 
 ### 2
-- [ ] Working 1v1 game
+- [x] Working 1v1 game
 
 ---
 
@@ -120,7 +120,7 @@ HTML/Javascript/CSS
 
 ### 2
 
-- [x] One player game page style
+- [ ] One player game page style
 
 ### 3 
 

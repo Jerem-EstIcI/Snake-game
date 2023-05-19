@@ -237,15 +237,7 @@ ul.navbar a:not(.active):hover {
 
 /* solosnake page */
 
-.pagesolo{
-	top: 6em;
-}
-
-.contentsolo{
-	width:25vw;
-}
-
-#solojs {
+#snake {
 	position: fixed;
 	top: 3.5em;
 	left: 5em;
@@ -265,9 +257,62 @@ ul.navbar a:not(.active):hover {
 	z-index: 1;
 }
 
+.pagesolo{
+	top: 6em;
+}
+
+.contentsolo{
+	width:25vw;
+}
+
 
 
 /* 1v1snake page */
+.divcanva {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#snakeJ1 {
+	position: fixed;
+	top: 7em;
+	left: 0;
+	right: 65vh;
+	margin: auto;
+	border: 0.35vw solid black;
+	border-radius: 2vw;
+	height: 80vh;
+	width: 80vh;
+	max-height: calc(65vh - 9em);
+	max-width: calc(65vh - 9em);
+	min-height: 20vh;
+	min-width: 20vh;
+	aspect-ratio: 1/1;
+	background-image: url('SRC/IMG/HTML/background-snake.png');
+	background-size: cover;
+	z-index: 1;
+}
+
+#snakeJ2 {
+	position: fixed;
+	top: 7em;
+	left: 65vh;
+	right: 0;
+	margin: auto;
+	border: 0.35vw solid black;
+	border-radius: 2vw;
+	height: 80vh;
+	width: 80vh;
+	max-height: calc(65vh - 9em);
+	max-width: calc(65vh - 9em);
+	min-height: 20vh;
+	min-width: 20vh;
+	aspect-ratio: 1/1;
+	background-image: url('SRC/IMG/HTML/background-snake.png');
+	background-size: cover;
+	z-index: 1;
+}
 
 .page1v1{
 	top: 6em;

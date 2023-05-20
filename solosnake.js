@@ -202,6 +202,7 @@ apple.y = Math.floor(Math.random() * tileCount);
 // Game over
 function gameOver() {
 	clearInterval(gameLoop);
+	alert("Game over! Score: " + score);
 }
 
 // Draw game

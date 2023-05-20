@@ -16,22 +16,23 @@ ul.navbar {
 	text-align: center;
 	z-index: 2;
 	background-color:white;
-	border: 0.1em solid black;
+	border: 0.1vw solid black;
 }
 
 ul.navbar li {
 	display: inline-block; 
 	background: #C1C1C1;
-	margin: 0.5em 0;
-	padding: 0.3em;
+	margin: 0.5vw 0;
+	padding: 0.3vw;
 	border: 0.1em solid black;
 	border-radius: 0.6em;
 }
 
 ul.navbar li {
-	width: 150px;
-	height: 25px;
-	margin: 5px;
+	width: 8em;
+	height: 1.5em;
+	margin: 0.1vw;
+	font-size:0.8em
 }
 
 ul.navbar a {
@@ -102,7 +103,7 @@ ul.navbar a:not(.active):hover {
 	font-size: 5em;
 	margin-block-start: 1.67em;
 	margin-block-end: 0.67em;
-	text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+	text-shadow: 0.03em 0.03em 0.07em #000, -0.03em -0.03em 0.07em #000, 0.03em -0.03em 0.07em #000, -0.03em 0.03em 0.07em #000;
 	color:white;
 }
 .title2Index {
@@ -110,7 +111,7 @@ ul.navbar a:not(.active):hover {
 	font-size: 3.5em;
 	margin-block-start: 1.25em;
 	margin-block-end: 0.67em;
-	text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+	text-shadow: 0.06em 0.06em 0.1em #000, -0.06em -0.06em 0.1em #000, 0.06em -0.06em 0.1em #000, -0.06em 0.06em 0.1em #000;
 	color:white;
 }
 	
@@ -135,20 +136,14 @@ ul.navbar a:not(.active):hover {
 
 .titleSnake {
 	font-size: 2.5em;
-	margin-block-start: 0.67em;
-	margin-block-end: 0.67em;
-	text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000;
+	margin-block-start: 0.67vw;
+	margin-block-end: 0.67vw;
+	text-shadow: 0.06em 0.06em 0.1em #000, -0.06em -0.06em 0.1em #000, 0.06em -0.06em 0.1em #000, -0.06em 0.06em 0.1em #000;
 	color:white;
 }
 
 .title2Snake {
 	font-size: 2em;
-}
-
-.imgSnake {
-}
-
-.textSnake {
 }
 
 .infotextSnake {
@@ -161,12 +156,12 @@ ul.navbar a:not(.active):hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 300px;
-	top: 46.1vw;
-	left: 5em;
+	width: 28vh;
+	font-size:2vh;
+	top: 90vh;
 	right: 0;
+	left:5em;
 	margin: auto;
-	transform: translateY(-50%);
 	border-radius: 1em;
 	z-index: 2;
 }
@@ -199,12 +194,12 @@ ul.navbar a:not(.active):hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 300px;
-	top: 46.1vw;
-	left: 5em;
+	width: 28vh;
+	font-size:2vh;
+	top: 90vh;
 	right: 0;
+	left:5em;
 	margin: auto;
-	transform: translateY(-50%);
 	border-radius: 1em;
 	z-index: 2;
 }
@@ -239,18 +234,14 @@ ul.navbar a:not(.active):hover {
 
 #snake {
 	position: fixed;
-	top: 3.5em;
+	top: 5rem;
 	left: 5em;
 	right: 0;
 	margin: auto;
-	border: 1.3vw solid black;
+	border: 2vh solid black;
 	border-radius: 2vw;
-	height: 80vh;
-	width: 80vh;
-	max-height: calc(100vh - 9em);
-	max-width: calc(100vh - 9em);
-	min-height: 40vh;
-	min-width: 40vh;
+	height: 65vh;
+	width: 65vh;
 	aspect-ratio: 1/1;
 	background-image: url('SRC/IMG/HTML/background-snake.png');
 	background-size: cover;
@@ -262,47 +253,40 @@ ul.navbar a:not(.active):hover {
 }
 
 .contentsolo{
-	width:25vw;
+	width:30.6vh;
 }
 
 
 
 /* 1v1snake page */
+
 .divcanva {
 	display: inline-block;
 	position: fixed;
 	margin: auto;
 	right: 0;
 	left: 0;
-	top: 9em;
-	z-index: 1;
+	top: 5rem;
 	width: 100%;
 	text-align: center;
+	left: 5em;
 }
 
 #snakeJ1 {
-	border: 0.7vw solid black;
+	border: 1.4vh solid black;
 	border-radius: 1.2vw;
-	height: 80vh;
-	width: 80vh;
-	max-height: calc(65vh - 9em);
-	max-width: calc(65vh - 9em);
-	min-height: 20vh;
-	min-width: 20vh;
+	height: 45vh;
+	width: 45vh;
 	aspect-ratio: 1/1;
 	background-image: url('SRC/IMG/HTML/background-snake.png');
 	background-size: cover;
 }
 
 #snakeJ2 {
-	border: 0.7vw solid black;
+	border: 1.4vh solid black;
 	border-radius: 1.2vw;
-	height: 80vh;
-	width: 80vh;
-	max-height: calc(65vh - 9em);
-	max-width: calc(65vh - 9em);
-	min-height: 20vh;
-	min-width: 20vh;
+	height: 45vh;
+	width: 45vh;
 	aspect-ratio: 1/1;
 	background-image: url('SRC/IMG/HTML/background-snake.png');
 	background-size: cover;
@@ -313,5 +297,5 @@ ul.navbar a:not(.active):hover {
 }
 
 .content1v1{
-	width:25vw;
+	width:25%;
 }

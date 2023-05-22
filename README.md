@@ -29,7 +29,6 @@ HTML/Javascript/CSS
 #### 1.1
 - [x] Score 
 - [ ] Best score **(option)**
-- [ ] Timer **(option)**
 
 #### 1.2
 - [x] Restart button 
@@ -108,7 +107,7 @@ HTML/Javascript/CSS
 
 - [x] Navigation bar
 - [x] Keyboard key 
-- [ ] Goal of the game
+- [x] Goal of the game
 - [x] Music **(option)**
 ---
 

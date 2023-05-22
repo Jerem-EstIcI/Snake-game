@@ -275,8 +275,8 @@ ul.navbar a:not(.active):hover {
 #snakeJ1 {
 	border: 1.4vh solid black;
 	border-radius: 1.2vw;
-	height: 45vh;
-	width: 45vh;
+	height: 55vh;
+	width: 55vh;
 	aspect-ratio: 1/1;
 	background-image: url('SRC/IMG/HTML/background-snake.png');
 	background-size: cover;
@@ -285,8 +285,8 @@ ul.navbar a:not(.active):hover {
 #snakeJ2 {
 	border: 1.4vh solid black;
 	border-radius: 1.2vw;
-	height: 45vh;
-	width: 45vh;
+	height: 55vh;
+	width: 55vh;
 	aspect-ratio: 1/1;
 	background-image: url('SRC/IMG/HTML/background-snake.png');
 	background-size: cover;

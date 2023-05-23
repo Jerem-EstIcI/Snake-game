@@ -320,9 +320,3 @@ function appleOnSnake() {
     }
     return false;
 }
-
-// restart key event
-var restartButton = document.getElementById("restart");
-restartButton.addEventListener("click", function() {
-	location.reload();
-});

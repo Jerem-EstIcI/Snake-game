@@ -58,6 +58,12 @@ for (var i = snakeLength2 - 1; i >= 0; i--) {
 // Generate apple
 generateApple2();
 
+// Game loop
+gameLoop2 = setInterval(function() {
+	update2();
+	draw2();
+}, speed2);
+
 // Update game
 function update2() {
 	// Move snake
@@ -105,25 +111,6 @@ if (snake2.length > snakeLength2) {
 	snake2.pop();
 }
 }
-
-// Get start button
-var startButton2 = document.getElementById("start");
-
-// Get restart button
-var restartButton2 = document.getElementById("restart");
-
-// Add event listener to start button
-startButton2.addEventListener("click", function() {
-  // Hide start button
-  startButton2.style.display = "none";
-  // Show restart button
-  restartButton2.style.display = "block";
-  // Start game loop
-  gameLoop2 = setInterval(function() {
-    update2();
-    draw2();
-  }, speed2);
-});
 
 // Handle key events
 //azerty ZQSD
@@ -308,3 +295,11 @@ function appleOnSnake2() {
     }
     return false;
 }
+
+
+
+// restart key event
+var restartButton2 = document.getElementById("restart");
+restartButton2.addEventListener("click", function() {
+	location.reload();
+});

@@ -31,10 +31,8 @@ var cornerBottomRightImg = new Image();
 cornerBottomRightImg.src = "SRC/IMG/JS/corner-bottom-right.png";
 
 // Initialize canvas
-var canvas = document.getElementById("snake");
+var canvas = document.getElementById("snakeJ1");
 var ctx = canvas.getContext("2d");
-
-
 
 // Set variables
 var tileSize = 32;
@@ -60,6 +58,11 @@ for (var i = snakeLength - 1; i >= 0; i--) {
 // Generate apple
 generateApple();
 
+// Game loop
+gameLoop = setInterval(function() {
+	update();
+	draw();
+}, speed);
 
 // Update game
 function update() {
@@ -109,24 +112,32 @@ if (snake.length > snakeLength) {
 }
 }
 
-// Get start button
-var startButton = document.getElementById("start");
-
-// Get restart button
-var restartButton = document.getElementById("restart");
-
-// Add event listener to start button
-startButton.addEventListener("click", function() {
-  // Hide start button
-  startButton.style.display = "none";
-  // Show restart button
-  restartButton.style.display = "block";
-  // Start game loop
-  gameLoop = setInterval(function() {
-    update();
-    draw();
-  }, speed);
+// Handle key events
+//azerty ZQSD
+document.addEventListener("keydown", function(event) {
+	if (event.keyCode == 81 && direction != "right") { 
+		direction = "left";
+	} else if (event.keyCode == 90 && direction != "down") { 
+		direction = "up";
+	} else if (event.keyCode == 68 && direction != "left") { 
+		direction = "right";
+	} else if (event.keyCode == 83 && direction != "up") { 
+		direction = "down";
+	}
 });
+//qwerty AWSD
+document.addEventListener("keydown", function(event) {
+	if (event.keyCode == 65 && direction != "right") { 
+		direction = "left";
+	} else if (event.keyCode == 87 && direction != "down") { 
+		direction = "up";
+	} else if (event.keyCode == 68 && direction != "left") { 
+		direction = "right";
+	} else if (event.keyCode == 83 && direction != "up") { 
+		direction = "down";
+	}
+});
+
 // Draw game
 function draw() {
 // Clear canvas
@@ -202,7 +213,6 @@ apple.y = Math.floor(Math.random() * tileCount);
 // Game over
 function gameOver() {
 	clearInterval(gameLoop);
-	alert("Game over! Score: " + score);
 }
 
 // Draw game
@@ -265,7 +275,6 @@ function draw() {
 		ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
 	}
 
-	
 	// Draw apple
 	var appleX = apple.x * tileSize;
 	var appleY = apple.y * tileSize;
@@ -299,40 +308,8 @@ function appleOnSnake() {
     return false;
 }
 
-// Handle key events
-//Arrow azerty & qwerty
-document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 37 && direction != "right") {
-		direction = "left";
-	} else if (event.keyCode == 38 && direction != "down") {
-		direction = "up";
-	} else if (event.keyCode == 39 && direction != "left") {
-		direction = "right";
-	} else if (event.keyCode == 40 && direction != "up") {
-		direction = "down";
-	}
-});
-//azerty ZQSD
-document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 81 && direction != "right") { 
-		direction = "left";
-	} else if (event.keyCode == 90 && direction != "down") { 
-		direction = "up";
-	} else if (event.keyCode == 68 && direction != "left") { 
-		direction = "right";
-	} else if (event.keyCode == 83 && direction != "up") { 
-		direction = "down";
-	}
-});
-//qwerty AWSD
-document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 65 && direction != "right") { 
-		direction = "left";
-	} else if (event.keyCode == 87 && direction != "down") { 
-		direction = "up";
-	} else if (event.keyCode == 68 && direction != "left") { 
-		direction = "right";
-	} else if (event.keyCode == 83 && direction != "up") { 
-		direction = "down";
-	}
+// restart key event
+var restartButton = document.getElementById("restart");
+restartButton.addEventListener("click", function() {
+	location.reload();
 });

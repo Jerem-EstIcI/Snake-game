@@ -87,7 +87,8 @@ HTML/Javascript/CSS
 #### 1.1
 
 - [x] Navigation bar
-- [x] Goal of the game
+- [x] Goal of the game (solo)
+- [ ] Goal of the game (1v1)
 
 ### 2
 
@@ -101,13 +102,12 @@ HTML/Javascript/CSS
 
 ### 3 
 
-- [ ] 1v1 game page
+- [x] 1v1 game page
 
 #### 3.1
 
 - [x] Navigation bar
 - [x] Keyboard key 
-- [x] Goal of the game
 - [x] Music **(option)**
 ---
 
@@ -119,10 +119,10 @@ HTML/Javascript/CSS
 
 ### 2
 
-- [ ] One player game page style
+- [x] One player game page style
 
 ### 3 
 
-- [ ] 1v1 game page style
+- [x] 1v1 game page style
 
 ---

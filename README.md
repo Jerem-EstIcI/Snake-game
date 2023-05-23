@@ -126,3 +126,25 @@ HTML/Javascript/CSS
 - [x] 1v1 game page style
 
 ---
+
+## BUG/Error/Adjustment
+
+### 1
+
+- [ ] JAVASCRIPT
+
+#### 1.1
+
+- [ ] The snake dies if too many keys are pressed quickly
+
+### 2
+
+- [x] HTML
+
+### 3
+
+- [ ] CSS
+
+#### 1.1
+
+- [ ] Navigation bar animation is not set for all screens

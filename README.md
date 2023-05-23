@@ -82,7 +82,7 @@ HTML/Javascript/CSS
 
 ### 1 
 
-- [x] Menu page
+- [ ] Menu page
 
 #### 1.1
 
@@ -148,3 +148,4 @@ HTML/Javascript/CSS
 #### 1.1
 
 - [ ] Navigation bar animation is not set for all screens
+- [ ] Pages colors **(option)**

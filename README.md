@@ -136,6 +136,7 @@ HTML/Javascript/CSS
 #### 1.1
 
 - [ ] The snake dies if too many keys are pressed quickly
+- [ ] Restart button restart directly the game 
 
 ### 2
 

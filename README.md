@@ -44,6 +44,7 @@ HTML/Javascript/CSS
 - [x] Can move with K_UP/DOWN/RIGHT/LEFT or ZQSD
 - [ ] Can change speed before starting **(option)**
 - [ ] Save the color of the snake **(option)**
+- [ ] Music start when the start button is clicked **(option)**
 
 ### 2
 - [x] Working 1v1 game

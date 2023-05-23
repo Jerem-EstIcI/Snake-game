@@ -38,6 +38,7 @@ HTML/Javascript/CSS
 - [ ] Can start with the keyboard key **(option)**
 - [ ] Starts the music if the button Start is clicked and end if the game is over **(option)**
 - [x] Works with QWERTY keyboards **(option)**
+- [ ] Music start when the start button is clicked **(option)**
 
 #### 1.3
 - [x] Make sure that the apple does not appear twice in the same place **(option)**
@@ -136,7 +137,7 @@ HTML/Javascript/CSS
 #### 1.1
 
 - [ ] The snake dies if too many keys are pressed quickly
-- [ ] Restart button restart directly the game 
+- [x] Restart button restart directly the game 
 
 ### 2
 

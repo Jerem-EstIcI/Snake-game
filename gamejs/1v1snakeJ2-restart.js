@@ -115,13 +115,13 @@ if (snake2.length > snakeLength2) {
 // Handle key events
 //azerty ZQSD
 document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 37 && direction2 != "right") { 
+	if (event.keyCode == 37 && direction2 != "right") {  		//K_LEFT - left
 		direction2 = "left";
-	} else if (event.keyCode == 38 && direction2 != "down") { 
+	} else if (event.keyCode == 38 && direction2 != "down") { 	//K_UP - up
 		direction2 = "up";
-	} else if (event.keyCode == 39 && direction2 != "left") { 
+	} else if (event.keyCode == 39 && direction2 != "left") { 	//K_RIGHT - right
 		direction2 = "right";
-	} else if (event.keyCode == 40 && direction2 != "up") { 
+	} else if (event.keyCode == 40 && direction2 != "up") { 	//K_DOWN - down
 		direction2 = "down";
 	}
 });
@@ -181,7 +181,6 @@ for (var i = 0; i < snake2.length; i++) {
 		}
 	}
 ctx2.drawImage(img2, snakePart2.x * tileSize2, snakePart2.y * tileSize2, tileSize2, tileSize2);
-
 }
 
 // Draw apple
@@ -295,8 +294,6 @@ function appleOnSnake2() {
     }
     return false;
 }
-
-
 
 // restart key event
 var restartButton2 = document.getElementById("restart");

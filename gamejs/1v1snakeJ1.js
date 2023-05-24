@@ -126,28 +126,19 @@ startButton.addEventListener("click", function() {
 });
 
 // Handle key events
-//azerty ZQSD
 document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 81 && direction != "right") { 
+	if (event.keyCode == 81 && direction != "right") { 			//Q - left
 		direction = "left";
-	} else if (event.keyCode == 90 && direction != "down") { 
+	} else if (event.keyCode == 90 && direction != "down") { 	//Z - up
 		direction = "up";
-	} else if (event.keyCode == 68 && direction != "left") { 
+	} else if (event.keyCode == 68 && direction != "left") {	//D - right
 		direction = "right";
-	} else if (event.keyCode == 83 && direction != "up") { 
+	} else if (event.keyCode == 83 && direction != "up") { 		//S - down
 		direction = "down";
-	}
-});
-//qwerty AWSD
-document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 65 && direction != "right") { 
+	} else if (event.keyCode == 65 && direction != "right") { 	//A - left
 		direction = "left";
-	} else if (event.keyCode == 87 && direction != "down") { 
+	} else if (event.keyCode == 87 && direction != "down") { 	//W - up
 		direction = "up";
-	} else if (event.keyCode == 68 && direction != "left") { 
-		direction = "right";
-	} else if (event.keyCode == 83 && direction != "up") { 
-		direction = "down";
 	}
 });
 
@@ -206,7 +197,6 @@ for (var i = 0; i < snake.length; i++) {
 		}
 	}
 ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
-
 }
 
 // Draw apple

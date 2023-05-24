@@ -34,8 +34,6 @@ cornerBottomRightImg.src = "SRC/IMG/JS/corner-bottom-right.png";
 var canvas = document.getElementById("snake");
 var ctx = canvas.getContext("2d");
 
-
-
 // Set variables
 var tileSize = 32;
 var canvasWidth = canvas.width;
@@ -114,6 +112,31 @@ if (snake.length > snakeLength) {
 }
 }
 
+// Handle key events
+document.addEventListener("keydown", function(event) {
+	if (event.keyCode == 81 && direction != "right") { 			//Q - left
+		direction = "left";
+	} else if (event.keyCode == 90 && direction != "down") { 	//Z - up
+		direction = "up";
+	} else if (event.keyCode == 68 && direction != "left") {	//D - right
+		direction = "right";
+	} else if (event.keyCode == 83 && direction != "up") { 		//S - down
+		direction = "down";
+	} else if (event.keyCode == 65 && direction != "right") { 	//A - left
+		direction = "left";
+	} else if (event.keyCode == 87 && direction != "down") { 	//W - up
+		direction = "up";
+	} else if (event.keyCode == 37 && direction != "right") {	//K_LEFT - left
+		direction = "left";
+	} else if (event.keyCode == 38 && direction != "down") {	//K_UP - up
+		direction = "up";
+	} else if (event.keyCode == 39 && direction != "left") {	//K_RIGHT - right
+		direction = "right";
+	} else if (event.keyCode == 40 && direction != "up") {		//K_DOWN - down
+		direction = "down";
+	}
+});
+
 // Draw game
 function draw() {
 // Clear canvas
@@ -169,7 +192,6 @@ for (var i = 0; i < snake.length; i++) {
 		}
 	}
 ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
-
 }
 
 // Draw apple
@@ -286,47 +308,8 @@ function appleOnSnake() {
     return false;
 }
 
-// Handle key events
-//Arrow azerty & qwerty
-document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 37 && direction != "right") {
-		direction = "left";
-	} else if (event.keyCode == 38 && direction != "down") {
-		direction = "up";
-	} else if (event.keyCode == 39 && direction != "left") {
-		direction = "right";
-	} else if (event.keyCode == 40 && direction != "up") {
-		direction = "down";
-	}
-});
-//azerty ZQSD
-document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 81 && direction != "right") { 
-		direction = "left";
-	} else if (event.keyCode == 90 && direction != "down") { 
-		direction = "up";
-	} else if (event.keyCode == 68 && direction != "left") { 
-		direction = "right";
-	} else if (event.keyCode == 83 && direction != "up") { 
-		direction = "down";
-	}
-});
-//qwerty AWSD
-document.addEventListener("keydown", function(event) {
-	if (event.keyCode == 65 && direction != "right") { 
-		direction = "left";
-	} else if (event.keyCode == 87 && direction != "down") { 
-		direction = "up";
-	} else if (event.keyCode == 68 && direction != "left") { 
-		direction = "right";
-	} else if (event.keyCode == 83 && direction != "up") { 
-		direction = "down";
-	}
-});
-
 // restart key event
 var restartButton = document.getElementById("restart");
 restartButton.addEventListener("click", function() {
 	location.reload();
 });
-

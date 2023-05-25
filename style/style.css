@@ -121,7 +121,7 @@ ul.navbar a:not(.active):hover {
 
 .textIndexbut {		display: block;
 	margin: 0 auto;
-	font-size: 1.50em;
+	font-size: 1.0em;
 	width: 85%;
 	margin-block-end: 10em;
 	background-color: white;

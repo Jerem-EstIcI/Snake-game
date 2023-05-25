@@ -1,6 +1,6 @@
 # Snake Game 
 
-**[Site](https://jerem-estici.github.io/Snake-game-html/)**
+**[Snake moua ha ha je suis un serpent qui mange des pommes ](https://jerem-estici.github.io/Snake-game-html/)**
 
 ## Ressource utilisées
 [Pour faire des README](https://www.youtube.com/watch?v=4lg3YyugRZQ&ab_channel=e-genieclimatique/) et [générateur de README](https://readme.so/fr/editor)

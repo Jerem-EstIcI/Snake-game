@@ -59,7 +59,7 @@ ul.navbar a:not(.active):hover {
 .navbar li::after {
 	content: "";
 	position: absolute;
-	bottom: 8px;
+	bottom: 8%;
 	width: 0;
 	height: 0.5px;
 	background-color: black;
@@ -123,7 +123,7 @@ ul.navbar a:not(.active):hover {
 	margin: 0 auto;
 	font-size: 1.50em;
 	width: 85%;
-	margin-block-end: 10em;
+	margin-block-end: 2.50em;
 	background-color: white;
 	padding: 0.5em;
 	border: 0.1em solid black; 
@@ -169,9 +169,9 @@ ul.navbar a:not(.active):hover {
 #restart::after {
 	content: "";
 	position: absolute;
-	bottom: 1.7px;
+	bottom: 6%;
 	width: 0;
-	height: 0.5px;
+	height: 0.5%;
 	background-color: black;
 	transition: width 1.5s ease-out;
 }
@@ -209,9 +209,9 @@ ul.navbar a:not(.active):hover {
 #start::after {
 	content: "";
 	position: absolute;
-	bottom: 1.7px;
+	bottom: 6%;
 	width: 0;
-	height: 0.5px;
+	height: 0.5%;
 	background-color: black;
 	transition: width 1.5s ease-out;
 }

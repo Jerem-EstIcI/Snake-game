@@ -86,7 +86,7 @@ HTML/Javascript/CSS
 
 ### 1 
 
-- [ ] Menu page
+- [x] Menu page
 
 #### 1.1
 

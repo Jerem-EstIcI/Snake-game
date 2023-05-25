@@ -148,9 +148,9 @@ HTML/Javascript/CSS
 
 ### 3
 
-- [ ] CSS
+- [x] CSS
 
 #### 1.1
 
-- [ ] Navigation bar animation is not set for all screens
+- [x] Navigation bar animation is not set for all screens
 - [ ] Pages colors **(option)**

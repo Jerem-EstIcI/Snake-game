@@ -128,6 +128,7 @@ ul.navbar a:not(.active):hover {
 	padding: 0.5em;
 	border: 0.1em solid black; 
 	border-radius: 0.7em;
+	 opacity: 0.6;
 }
 
 

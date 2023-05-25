@@ -92,7 +92,7 @@ Your goal: The goal of Snake is to control a snake as it moves across a 2D playf
 
 - [x] Navigation bar
 - [x] Goal of the game (solo)
-- [ ] Goal of the game (1v1)
+- [x] Goal of the game (1v1)
 
 ### 2
 

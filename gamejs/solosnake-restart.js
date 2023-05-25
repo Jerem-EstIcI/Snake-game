@@ -313,9 +313,3 @@ var restartButton = document.getElementById("restart");
 restartButton.addEventListener("click", function() {
 	location.reload();
 });
-
-document.addEventListener("keydown", function(event) {
-    if (event.code === "Space") {
-        location.reload();
-    }
-});

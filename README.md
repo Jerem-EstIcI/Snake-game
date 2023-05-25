@@ -2,6 +2,9 @@
 
 **[Snake Game](https://jerem-estici.github.io/Snake-game-html/)**
 
+## Rules :
+Your goal: The goal of Snake is to control a snake as it moves across a 2D playfield, making it eat food to make it grow while avoiding hitting walls or the snake's own tail. The snake moves continuously in a given direction, and the player can change this direction using the direction keys on the keyboard. As the snake grows, it becomes harder to control as it takes up more of the screen and its tail becomes an obstacle to avoid.The game ends when the snake hits a wall or its own tail, and the goal is to get the highest score possible by eating as much food as possible before losing.
+
 ## Ressource utilisées
 [Pour faire des README](https://www.youtube.com/watch?v=4lg3YyugRZQ&ab_channel=e-genieclimatique/) et [générateur de README](https://readme.so/fr/editor)
 <br>
@@ -13,9 +16,6 @@
 
 ## Language 
 HTML/Javascript/CSS
-
-# Rules :
-Your goal: The goal of Snake is to control a snake as it moves across a 2D playfield, making it eat food to make it grow while avoiding hitting walls or the snake's own tail. The snake moves continuously in a given direction, and the player can change this direction using the direction keys on the keyboard. As the snake grows, it becomes harder to control as it takes up more of the screen and its tail becomes an obstacle to avoid.The game ends when the snake hits a wall or its own tail, and the goal is to get the highest score possible by eating as much food as possible before losing.
 
 # To do
 

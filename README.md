@@ -14,6 +14,9 @@
 ## Language 
 HTML/Javascript/CSS
 
+# Rules :
+
+
 # To do
 
 ---

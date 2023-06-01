@@ -30,99 +30,99 @@ cornerBottomLeftImg2.src = "../SRC/IMG/JS/corner-bottom-left.png";
 var cornerBottomRightImg2 = new Image();
 cornerBottomRightImg2.src = "../SRC/IMG/JS/corner-bottom-right.png";
 
-// Initialize canvas
+// Initialisation du Canva
 var canvas2 = document.getElementById("snakeJ2");
 var ctx2 = canvas2.getContext("2d");
 
-// Set variables
-var tileSize2 = 32;
-var canvasWidth2 = canvas2.width;
-var canvasHeight2 = canvas2.height;
-var tileCount2 = 15;
-var snake2 = [];
-var snakeLength2 = 3;
-var speed2 = 115
+// Variables
+var tileSize2 = 32; // Taille en pixels d'une tuile
+var canvasWidth2 = canvas2.width; // Largeur du canvas
+var canvasHeight2 = canvas2.height; // Hauteur du canvas
+var tileCount2 = 15; // Nombre de tuiles dans le canvas (hauteur et longueur)
+var snake2 = []; // Tableau représentant le serpent
+var snakeLength2 = 3; // Longueur initiale du serpent
+var speed2 = 115 // Vitesse du jeu en millisecondes
 var apple2 = {
 	x: 0,
 	y: 0
-};
-var direction2 = "right";
-var score2 = 0;
-var gameLoop2;
+}; // Objet représentant la position de la pomme
+var direction2 = "right"; // Direction initiale du serpent
+var score2 = 0; // Score du joueur
+var gameLoop2; // Identifiant de la boucle de jeu
 
-// Generate snake
+// Génère le serpent
 for (var i = snakeLength2 - 1; i >= 0; i--) {
-	snake2.push({x: i, y: 0});
+	snake2.push({x: i, y: 0}); // Ajoute des segments au serpent
 }
 
-// Generate apple
-generateApple2();
+// Génère la pomme
+generateApple2(); // Génère la position initiale de la pomme
 
-// Update game
+// Mettre à jour le jeu
 function update2() {
-	// Move snake
+	// Déplacement du serpent
 	var nextX2 = snake2[0].x;
 	var nextY2 = snake2[0].y;
 switch (direction2) {
 	case "right":
-		nextX2++;
+		nextX2++; // Déplace le serpent vers la droite
 		break;
 	case "left":
-		nextX2--;
+		nextX2--; // Déplace le serpent vers la gauche
 		break;
 	case "up":
-		nextY2--;
+		nextY2--; // Déplace le serpent vers le haut
 		break;
 	case "down":
-		nextY2++;
+		nextY2++; // Déplace le serpent vers le bas
 		break;
 }
 
-// Check collision with walls
+// Vérifier la colision avec les murs
 if (nextX2 < 0 || nextX2 >= tileCount2 || nextY2 < 0 || nextY2 >= tileCount2) {
-	gameOver2();
+	gameOver2(); // Fin du jeu en cas de collision avec les mur
 	return;
 }
 
-// Check collision with snake
+// Vérifier la colision avec le serpent
 for (var i = 0; i < snake2.length; i++) {
 	if (snake2[i].x === nextX2 && snake2[i].y === nextY2) {
-		gameOver2();
+		gameOver2(); // Fin du jeu en cas de collision avec le serpent lui-même
 		return;
 	}
 }
 
-// Check collision with apple
+// Vérifier la colision avec la pomme
 if (nextX2 === apple2.x && nextY2 === apple2.y) {
-	snakeLength2++;
-	score2++;
-	generateApple2();
+	snakeLength2++; // Augmente la longueur du serpent
+	score2++; // Augmente le score du joueur
+	generateApple2(); // Génère une nouvelle position pour la pomme
 }
 
-// Move snake
-snake2.unshift({x: nextX2, y: nextY2});
+// Déplacement du serpent
+snake2.unshift({x: nextX2, y: nextY2}); // Ajoute un segment au serpent à la position suivante
 if (snake2.length > snakeLength2) {
-	snake2.pop();
+	snake2.pop(); // Supprime le segment de queue du serpent si sa longueur dépasse la longueur actuelle
 }
 }
 
-// Get start button
+// Récupérer le bouton de démarrage
 var startButton2 = document.getElementById("start");
 
-// Get restart button
+// Récupérer le bouton de redémarrage
 var restartButton2 = document.getElementById("restart");
 
-// Add event listener to start button
+// Ajouter un écouteur d'événements au bouton de démarrage
 startButton2.addEventListener("click", function() {
-  // Hide start button
+  // Cacher le bouton de démarrage
   startButton2.style.display = "none";
-  // Show restart button
+  // Afficher le bouton de redémarrage
   restartButton2.style.display = "block";
-  // Start game loop
+  // Démarrer la boucle de jeu
   gameLoop2 = setInterval(function() {
-    update2();
-    draw2();
-  }, speed2);
+    update2(); // Mettre à jour le jeu
+    draw2(); // Dessiner le jeu
+  }, speed2); // Vitesse du jeu
 });
 
 // Handle key events
@@ -136,75 +136,75 @@ document.addEventListener("keydown", function(event) {
 		direction2 = "right";
 	} else if (event.keyCode == 40 && direction2 != "up") { 	//K_DOWN - down
 		direction2 = "down";
-	} else if (event.keyCode == 32) {
+	} else if (event.keyCode == 32) {							//Space - restart
 		location.reload();
 	}
 });
 
-// Draw game
+// Dessine le jeu
 function draw2() {
-// Clear canvas
+// Vide le Canva
 ctx2.clearRect(0, 0, canvasWidth2, canvasHeight2);
-// Draw snake
+// Dessine le serpent
 for (var i = 0; i < snake2.length; i++) {
 	var snakePart2 = snake2[i];
 	var img2;
 
 	if (i === 0) {
-		// Snake head
+		// Tête du serpent
 		switch (direction2) {
 			case "right":
-				img2 = headRightImg2;
+				img2 = headRightImg2; // Image de la tête du serpent tournée vers la droite
 				break;
 			case "left":
-				img2 = headLeftImg2;
+				img2 = headLeftImg2; // Image de la tête du serpent tournée vers la gauche
 				break;
 			case "up":
-				img2 = headUpImg2;
+				img2 = headUpImg2; // Image de la tête du serpent tournée vers le haut
 				break;
 			case "down":
-				img2 = headDownImg2;
+				img2 = headDownImg2; // Image de la tête du serpent tournée vers le haut
 				break;
 		}
 	} else if (i === snake2.length - 1) {
-		// Snake tail
+		// Queue du serpent
 		var previousSnakePart2 = snake2[i - 1];
 		switch (direction2) {
 			case "right":
-				img2 = previousSnakePart2.y < snakePart2.y ? tailDownImg2 : tailUpImg2;
+				img2 = previousSnakePart2.y < snakePart2.y ? tailDownImg2 : tailUpImg2; // Image de la queue du serpent tournée vers la droite
 				break;
 			case "left":
-				img2 = previousSnakePart2.y < snakePart2.y ? tailDownImg2 : tailUpImg2;
+				img2 = previousSnakePart2.y < snakePart2.y ? tailDownImg2 : tailUpImg2; // Image de la queue du serpent tournée vers la gauche
 				break;
 			case "up":
-				img2 = previousSnakePart2.x < snakePart2.x ? tailRightImg2 : tailLeftImg2;
+				img2 = previousSnakePart2.x < snakePart2.x ? tailRightImg2 : tailLeftImg2; // Image de la queue du serpent tournée vers le haut
 				break;
 			case "down":
-				img2 = previousSnakePart2.x < snakePart2.x ? tailRightImg2 : tailLeftImg2;
+				img2 = previousSnakePart2.x < snakePart2.x ? tailRightImg2 : tailLeftImg2; // Image de la queue du serpent tournée vers le bas
 				break;
 		}
 	} else {
-		// Snake body
+		// Corps du serpent
 		var previousSnakePart2 = snake2[i - 1];
 		var nextSnakePart2 = snake2[i + 1];
 		if ((previousSnakePart2.x < snakePart2.x && nextSnakePart2.x > snakePart2.x) ||
 			(previousSnakePart2.x > snakePart2.x && nextSnakePart2.x < snakePart2.x)) {
-			img2 = bodyHorizontalImg2;
+			img2 = bodyHorizontalImg2; // Image du corps du serpent horizontale
 		} else if ((previousSnakePart2.y < snakePart2.y && nextSnakePart2.y > snakePart2.y) ||
 			(previousSnakePart2.y > snakePart2.y && nextSnakePart2.y < snakePart2.y)) {
-			img2 = bodyVerticalImg2;
+			img2 = bodyVerticalImg2; // Image du corps du serpent verticale
 		}
 	}
-ctx2.drawImage(img2, snakePart2.x * tileSize2, snakePart2.y * tileSize2, tileSize2, tileSize2);
+ctx2.drawImage(img2, snakePart2.x * tileSize2, snakePart2.y * tileSize2, tileSize2, tileSize2); // Dessine le segment du serpent avec l'image correspondante
 }
 
-// Draw apple
+// Dessine la pomme
 ctx2.drawImage(appleImg2, apple2.x * tileSize2, apple2.y * tileSize2, tileSize2, tileSize2);
 
-// Draw score
-ctx2.font = "20px Luckiest_Guy";
-ctx2.fillStyle = "#ffffff";
-ctx2.fillText("Score: " + score2, 10, 25);
+// Dessine le score
+ctx2.font = "20px Luckiest_Guy"; // Police et taille du texte
+ctx2.fillStyle = "#ffffff"; // Couleur du texte
+ctx2.fillText("Score: " + score2, 10, 25); // Affiche le score en haut à gauche du canvas
 }
 
 // Generate apple

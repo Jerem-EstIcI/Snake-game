@@ -17,8 +17,8 @@ ul.navbar {
 	margin: 0;
 	text-align: center;
 	z-index: 2;
-	background-color:grey;
-	border: 0.1vw solid black;
+	background-color:rgb(94, 94, 94);
+	border: 0.25vw solid black;
 }
 
 ul.navbar li {
@@ -101,7 +101,7 @@ ul.navbar a:not(.active):hover {
 	width:250px;
 	height:150px;
 	border: 0.5em solid black;
-	
+	border-radius: 1em;
 }
 
 .country-selector a {

@@ -89,6 +89,27 @@ ul.navbar a:not(.active):hover {
 
 
 
+/* Language Selection */
+.country-selector {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	gap:50px;
+}
+
+.country-selector img {
+	width:250px;
+	height:150px;
+	border: 0.5em solid black;
+	
+}
+
+.country-selector a {
+	text-decoration: none;
+}
+
+
+
 /* index page */
 
 .pagesindex{

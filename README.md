@@ -21,6 +21,12 @@ Le jeu se termine lorsque le serpent heurte un mur ou sa propre queue, et le but
 <br>
 [Générateur de gif a partir d'images](ezgif.com)
 
+## Crédits
+- Auteur: <a href="https://soundcloud.com/c_luke_hall">Luke Hall</a><br />
+Track: <b> Dystopia</b><br />
+Licence: <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">https://creativecommons.org/licenses/by-sa/3.0/deed.fr</a><br />
+Source: <a href="https://www.auboutdufil.com">Télécharger la musique gratuitement</a>
+
 ## Language 
 HTML/Javascript/CSS
 

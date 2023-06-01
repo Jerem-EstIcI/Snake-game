@@ -39,6 +39,8 @@ HTML/Javascript/CSS
 #### 1.1
 - [x] Score 
 - [ ] Best score **(option)**
+- [ ] Score comparator 1v1
+- [ ] victory event 1v1
 
 #### 1.2
 - [x] Restart button 

@@ -4,6 +4,11 @@
 
 ## Rules :
 Your goal: The goal of Snake is to control a snake as it moves across a 2D playfield, making it eat food to make it grow while avoiding hitting walls or the snake's own tail. The snake moves continuously in a given direction, and the player can change this direction using the direction keys on the keyboard. As the snake grows, it becomes harder to control as it takes up more of the screen and its tail becomes an obstacle to avoid.The game ends when the snake hits a wall or its own tail, and the goal is to get the highest score possible by eating as much food as possible before losing.
+ 
+Votre but : Le but du jeu Snake est de contrôler un serpent qui se déplace sur un terrain de jeu en 2D, en le faisant manger des aliments pour le faire grandir tout en évitant de heurter les murs ou la queue du serpent lui-même.
+Le serpent se déplace continuellement dans une direction donnée, et le joueur peut changer cette direction en utilisant les touches de direction sur le clavier.
+Plus le serpent grandit, plus il devient difficile à contrôler, car il occupe une plus grande partie de l'écran et sa queue devient un obstacle à éviter.
+Le jeu se termine lorsque le serpent heurte un mur ou sa propre queue, et le but est d'obtenir le meilleur score possible en mangeant le plus grand nombre possible d'aliments avant de perdre.
 
 ## Ressource utilisées
 [Pour faire des README](https://www.youtube.com/watch?v=4lg3YyugRZQ&ab_channel=e-genieclimatique/) et [générateur de README](https://readme.so/fr/editor)

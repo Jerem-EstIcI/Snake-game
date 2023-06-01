@@ -136,6 +136,8 @@ document.addEventListener("keydown", function(event) {
 		direction2 = "right";
 	} else if (event.keyCode == 40 && direction2 != "up") { 	//K_DOWN - down
 		direction2 = "down";
+	} else if (event.keyCode == 32) {
+		location.reload();
 	}
 });
 

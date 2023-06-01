@@ -3,6 +3,8 @@
 body{
 	background-color: #FEF5E7;
 	font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	background-image: url('../SRC/IMG/HTML/background.gif');
+	background-size: cover;
 }
 
 ul.navbar {
@@ -15,7 +17,7 @@ ul.navbar {
 	margin: 0;
 	text-align: center;
 	z-index: 2;
-	background-color:white;
+	background-color:grey;
 	border: 0.1vw solid black;
 }
 
@@ -88,11 +90,6 @@ ul.navbar a:not(.active):hover {
 
 
 /* index page */
-
-.index {
-	background-image: url('../SRC/IMG/HTML/background.gif');
-	background-size: cover;
-}
 
 .pagesindex{
 	top: 6em;

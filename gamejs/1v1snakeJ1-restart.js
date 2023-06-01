@@ -126,6 +126,8 @@ document.addEventListener("keydown", function(event) {
 		direction = "left";
 	} else if (event.keyCode == 87 && direction != "down") { 	//W - up
 		direction = "up";
+	} else if (event.keyCode == 32) {
+		location.reload();
 	}
 });
 

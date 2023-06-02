@@ -148,7 +148,17 @@ ul.navbar a:not(.active):hover {
 	border-radius: 0.7em;
 }
 
+.iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajustez la hauteur en fonction de vos besoins */
+}
 
+.iframe iframe {
+  width: 80%; /* Ajustez la largeur en fonction de vos besoins */
+  height: 80%; /* Ajustez la hauteur en fonction de vos besoins */
+}
 
 /* solosnake and 1v1snake */
 

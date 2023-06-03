@@ -1,259 +1,271 @@
-/* General all pages combined */
+/* Général - toutes les pages combinées */
 
-body{
-	background-color: #FEF5E7;
-	font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-	background-image: url('../SRC/IMG/HTML/background.gif');
-	background-size: cover;
+body {
+	background-color: #FEF5E7; /* Couleur d'arrière-plan */
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police de caractères */
+	background-image: url('../SRC/IMG/HTML/background.gif'); /* Image d'arrière-plan */
+	background-size: cover; /* Redimensionner l'image pour couvrir tout l'arrière-plan */
 }
 
 ul.navbar {
-	position: fixed;
-	top: -0em;
-	left: 0;
-	width: 100%;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	z-index: 2;
-	background-color:rgb(94, 94, 94);
-	border: 0.25vw solid black;
+	position: fixed; /* Position fixe pour rester en haut de la page lors du défilement */
+	top: -0em; /* Décalage de -0em par rapport au haut de la page */
+	left: 0; /* Alignement à gauche */
+	width: 100%; /* Largeur de 100% */
+	list-style-type: none; /* Pas de puces de liste */
+	padding: 0; /* Aucun espacement intérieur */
+	margin: 0; /* Aucun espacement extérieur */
+	text-align: center; /* Alignement du texte au centre */
+	z-index: 2; /* Positionnement en avant-plan */
+	background-color: rgb(94, 94, 94); /* Couleur d'arrière-plan */
+	border: 0.25vw solid black; /* Bordure de 0.25vw en couleur noire */
 }
 
 ul.navbar li {
-	display: inline-block; 
-	background: #C1C1C1;
-	margin: 0.5vw 0;
-	padding: 0.3vw;
-	border: 0.1em solid black;
-	border-radius: 0.6em;
+	display: inline-block; /* Affichage en ligne */
+	background: #C1C1C1; /* Couleur d'arrière-plan */
+	margin: 0.5vw 0; /* Marge de 0.5vw en haut et en bas, pas de marge horizontale */
+	padding: 0.3vw; /* Remplissage de 0.3vw */
+	border: 0.1em solid black; /* Bordure de 0.1em en couleur noire */
+	border-radius: 0.6em; /* Bordure arrondie de 0.6em */
 }
 
 ul.navbar li {
-	width: 9em;
-	height: 1.5em;
-	margin: 0.1vw;
-	font-size:0.8em
+	width: 9em; /* Largeur de 9em */
+	height: 1.5em; /* Hauteur de 1.5em */
+	margin: 0.1vw; /* Marge de 0.1vw */
+	font-size: 0.8em; /* Taille de police de 0.8em */
 }
 
 ul.navbar a {
-	text-decoration: none;
+	text-decoration: none; /* Pas de soulignement du texte */
 }
 
 a:link {
-	color: black;
+	color: black; /* Couleur du lien non visité */
 }
 
 a:visited {
-	color: black;
+	color: black; /* Couleur du lien visité */
 }
 
 .navbar li {
-	position: relative;
+	position: relative; /* Position relative */
 }
 
 ul.navbar a:not(.active):hover {
-	font-weight: bold;
+	font-weight: bold; /* Gras lors du survol */
 }
 
-.navbar li::before,
-.navbar li::after {
-	content: "";
-	position: absolute;
-	bottom: 8%;
-	width: 0;
-	height: 0.5px;
-	background-color: black;
-	transition: width 1s cubic-bezier(0.65, 0.05, 0.39, 1.38);
+.navbar li a::before,
+.navbar li a::after {
+	content: ""; /* Contenu vide */
+	position: absolute; /* Position absolue */
+	bottom: 8%; /* Position à 8% depuis le bas */
+	width: 0; /* Largeur de 0 */
+	height: 0.5px; /* Hauteur de 0.5px */
+	background-color: black; /* Couleur noire */
+	transition: width 1s cubic-bezier(0.65, 0.05, 0.39, 1.38); /* Transition de largeur avec une courbe d'accélération */
 }
 
-.navbar li::before {
-	left: 50%;
-	transform: translateX(-50%);
+.navbar li a::before {
+	left: 50%; /* Position à 50% depuis la gauche */
+	transform: translateX(-50%); /* Translation de -50% sur l'axe X */
 }
 
-.navbar li::after {
-	right: 50%;
-	transform: translateX(50%);
+.navbar li a::after {
+	right: 50%; /* Position à 50% depuis la droite */
+	transform: translateX(50%); /* Translation de 50% sur l'axe X */
 }
 
-.navbar li:hover::before,
-.navbar li:hover::after {
-	width: 50%;
+.navbar li a:hover::before,
+.navbar li a:hover::after {
+	width: 50%; /* Largeur de 50% lors du survol */
 }
 
 .active {
-	font-weight: bold;
+	font-weight: bold; /* Gras pour l'élément actif */
 }
 
 
 
-/* Language Selection */
+/* Sélection de la langue */
+
 .country-selector {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	gap:50px;
+	display: flex; /* Affichage en ligne des éléments enfants */
+	justify-content: center; /* Centrer horizontalement les éléments enfants */
+	align-items: center; /* Centrer verticalement les éléments enfants */
+	gap: 50px; /* Espacement de 50px entre les éléments enfants */
 }
 
 .country-selector img {
-	width:250px;
-	height:150px;
-	border: 0.5em solid black;
-	border-radius: 1em;
+	width: 250px; /* Largeur de l'image de 250px */
+	height: 150px; /* Hauteur de l'image de 150px */
+	border: 0.5em solid black; /* Bordure de 0.5em en couleur noire */
+	border-radius: 1em; /* Bordure arrondie de 1em */
 }
 
 .country-selector a {
-	text-decoration: none;
+	text-decoration: none; /* Pas de soulignement du texte */
 }
 
 
 
-/* index page */
+/* Index et page de menu */
 
-.pagesindex{
-	top: 6em;
+.pagesindex {
+	top: 6em; /* Position à 6em depuis le haut */
 }
 
 .titleIndex {
-	text-align: center;
-	font-size: 5em;
-	margin-block-start: 0.75em;
-	margin-block-end: 0.67em;
-	text-shadow: 0.03em 0.03em 0.07em #000, -0.03em -0.03em 0.07em #000, 0.03em -0.03em 0.07em #000, -0.03em 0.03em 0.07em #000;
-	color:white;
-}
-.title2Index {
-	padding-left:2em;
-	font-size: 3.5em;
-	margin-block-start: 1.25em;
-	margin-block-end: 0.67em;
-	text-shadow: 0.06em 0.06em 0.1em #000, -0.06em -0.06em 0.1em #000, 0.06em -0.06em 0.1em #000, -0.06em 0.06em 0.1em #000;
-	color:white;
-}
-	
-.textIndex {
-	font-size:1.75em;
+	text-align: center; /* Alignement du texte au centre */
+	font-size: 5em; /* Taille de police de 5em */
+	margin-block-start: 0.75em; /* Marge de début de bloc de 0.75em */
+	margin-block-end: 0.67em; /* Marge de fin de bloc de 0.67em */
+	text-shadow: 0.03em 0.03em 0.07em #000, -0.03em -0.03em 0.07em #000, 0.03em -0.03em 0.07em #000, -0.03em 0.03em 0.07em #000; /* Ombre du texte */
+	color: white; /* Couleur du texte en blanc */
 }
 
-.textIndexbut {		display: block;
-	margin: 0 auto;
-	font-size: 1.50em;
-	width: 85%;
-	margin-block-end: 2.50em;
-	background-color: white;
-	padding: 0.5em;
-	border: 0.1em solid black; 
-	border-radius: 0.7em;
+.title2Index {
+	padding-left: 2em; /* Espacement à gauche de 2em */
+	font-size: 3.5em; /* Taille de police de 3.5em */
+	margin-block-start: 1.25em; /* Marge de début de bloc de 1.25em */
+	margin-block-end: 0.67em; /* Marge de fin de bloc de 0.67em */
+	text-shadow: 0.06em 0.06em 0.1em #000, -0.06em -0.06em 0.1em #000, 0.06em -0.06em 0.1em #000, -0.06em 0.06em 0.1em #000; /* Ombre du texte */
+	color: white; /* Couleur du texte en blanc */
+}
+
+.textIndex {
+	font-size: 1.75em; /* Taille de police de 1.75em */
+}
+
+.textIndexbut {
+	display: block; /* Affichage en bloc */
+	margin: 0 auto; /* Marge automatique à gauche et à droite */
+	font-size: 1.50em; /* Taille de police de 1.50em */
+	width: 85%; /* Largeur de 85% */
+	margin-block-end: 2.50em; /* Marge de fin de bloc de 2.50em */
+	background-color: white; /* Couleur d'arrière-plan en blanc */
+	padding: 0.5em; /* Remplissage de 0.5em */
+	border: 0.1em solid black; /* Bordure de 0.1em en couleur noire */
+	border-radius: 0.7em; /* Bordure arrondie de 0.7em */
 }
 
 .iframe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ajustez la hauteur en fonction de vos besoins */
+	display: flex; /* Affichage en ligne des éléments enfants */
+	justify-content: center; /* Centrer horizontalement les éléments enfants */
+	align-items: center; /* Centrer verticalement les éléments enfants */
+	height: 100vh; /* Hauteur de 100% de la hauteur de la vue */
 }
 
 .iframe iframe {
-  width: 80%; /* Ajustez la largeur en fonction de vos besoins */
-  height: 80%; /* Ajustez la hauteur en fonction de vos besoins */
+	width: 80%; /* Largeur de l'iframe de 80% */
+	height: 80%; /* Hauteur de l'iframe de 80% */
+	border-radius: 1em; /* Bordure arrondie de 1em */
+	border: 0.1em solid black; /* Bordure de 0.1em en couleur noire */
 }
 
-/* solosnake and 1v1snake */
+
+
+/* solosnake et 1v1snake */
 
 .titleSnake {
-	font-size: 2.5em;
-	margin-block-start: 0.67vw;
-	margin-block-end: 0.67vw;
-	text-shadow: 0.06em 0.06em 0.1em #000, -0.06em -0.06em 0.1em #000, 0.06em -0.06em 0.1em #000, -0.06em 0.06em 0.1em #000;
-	color:white;
+	font-size: 2.5em; /* Taille de police de 2.5em */
+	margin-block-start: 0.67vw; /* Marge de début de bloc de 0.67vw */
+	margin-block-end: 0.67vw; /* Marge de fin de bloc de 0.67vw */
+	text-shadow: 0.06em 0.06em 0.1em #000, -0.06em -0.06em 0.1em #000, 0.06em -0.06em 0.1em #000, -0.06em 0.06em 0.1em #000; /* Ombre du texte */
+	color: white; /* Couleur du texte en blanc */
 }
 
 .title2Snake {
-	font-size: 2em;
+	font-size: 2em; /* Taille de police de 2em */
 }
 
 .infotextSnake {
-	font-size: 0.6em;
+	font-size: 0.6em; /* Taille de police de 0.6em */
 }
 
 #restart {
-	border: 0.1em solid black;
-	position: fixed;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 28vh;
-	font-size:2vh;
-	top: 90vh;
-	right: 0;
-	left:5em;
-	margin: auto;
-	border-radius: 1em;
-	z-index: 2;
+	border: 0.1em solid black; /* Bordure de 0.1em en couleur noire */
+	position: fixed; /* Position fixe */
+	display: block; /* Affichage en bloc */
+	margin-left: auto; /* Marge automatique à gauche */
+	margin-right: auto; /* Marge automatique à droite */
+	width: 28vh; /* Largeur de 28vh */
+	font-size: 2vh; /* Taille de police de 2vh */
+	top: 90vh; /* Position en haut à 90vh depuis le haut */
+	right: 0; /* Position à droite à 0 */
+	left: 5em; /* Position à gauche à 5em */
+	margin: auto; /* Marge automatique */
+	border-radius: 1em; /* Bordure arrondie de 1em */
+	z-index: 2; /* Indice de position de 2 */
 }
+
+#restart a{
+	text-decoration: none; /* Pas de soulignement du texte */
+}
+
 #restart::before,
 #restart::after {
-	content: "";
-	position: absolute;
-	bottom: 6%;
-	width: 0;
-	height: 0.5%;
-	background-color: black;
-	transition: width 1.5s ease-out;
+	content: ""; /* Contenu vide */
+	position: absolute; /* Position absolue */
+	bottom: 6%; /* Position en bas à 6% depuis le bas */
+	width: 0; /* Largeur de 0 */
+	height: 0.5%; /* Hauteur de 0.5% */
+	background-color: black; /* Couleur d'arrière-plan en noir */
+	transition: width 1.5s ease-out; /* Transition de la largeur avec une durée de 1.5s */
 }
 #restart::before {
-	left: 50%;
-	transform: translateX(-50%);
+	left: 50%; /* Position à 50% depuis la gauche */
+	transform: translateX(-50%); /* Translation de -50% sur l'axe X */
 }
 #restart::after {
-	right: 50%;
-	transform: translateX(50%);
+	right: 50%; /* Position à 50% depuis la droite */
+	transform: translateX(50%); /* Translation de 50% sur l'axe X */
 }
 #restart:hover::before,
 #restart:hover::after {
-	width: 35%;
+	width: 35%; /* Largeur de 35% lors du survol */
 }
 
 #start {
-	border: 0.1em solid black;
-	position: fixed;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 28vh;
-	font-size:2vh;
-	top: 90vh;
-	right: 0;
-	left:5em;
-	margin: auto;
-	border-radius: 1em;
-	z-index: 2;
+	border: 0.1em solid black; /* Bordure de 0.1em en couleur noire */
+	position: fixed; /* Position fixe */
+	display: block; /* Affichage en bloc */
+	margin-left: auto; /* Marge automatique à gauche */
+	margin-right: auto; /* Marge automatique à droite */
+	width: 28vh; /* Largeur de 28vh */
+	font-size: 2vh; /* Taille de police de 2vh */
+	top: 90vh; /* Position en haut à 90vh depuis le haut */
+	right: 0; /* Position à droite à 0 */
+	left: 5em; /* Position à gauche à 5em */
+	margin: auto; /* Marge automatique */
+	border-radius: 1em; /* Bordure arrondie de 1em */
+	z-index: 2; /* Indice de position de 2 */
 }
 
 
 #start::before,
 #start::after {
-	content: "";
-	position: absolute;
-	bottom: 6%;
-	width: 0;
-	height: 0.5%;
-	background-color: black;
-	transition: width 1.5s ease-out;
+	content: ""; /* Contenu vide */
+	position: absolute; /* Position absolue */
+	bottom: 6%; /* Position en bas à 6% depuis le bas */
+	width: 0; /* Largeur de 0 */
+	height: 0.5%; /* Hauteur de 0.5% */
+	background-color: black; /* Couleur d'arrière-plan en noir */
+	transition: width 1.5s ease-out; /* Transition de la largeur avec une durée de 1.5s */
 }
 #start::before {
-	left: 50%;
-	transform: translateX(-50%);
+	left: 50%; /* Position à 50% depuis la gauche */
+	transform: translateX(-50%); /* Translation de -50% sur l'axe X */
 }
 #start::after {
-	right: 50%;
-	transform: translateX(50%);
+	right: 50%; /* Position à 50% depuis la droite */
+	transform: translateX(50%); /* Translation de 50% sur l'axe X */
 }
 #start:hover::before,
 #start:hover::after {
-	width: 35%;
+	width: 35%; /* Largeur de 35% lors du survol */
 }
 
 
@@ -261,27 +273,27 @@ ul.navbar a:not(.active):hover {
 /* solosnake page */
 
 #snake {
-	position: fixed;
-	top: 5rem;
-	left: 5em;
-	right: 0;
-	margin: auto;
-	border: 2vh solid black;
-	border-radius: 2vw;
-	height: 65vh;
-	width: 65vh;
-	aspect-ratio: 1/1;
-	background-image: url('../SRC/IMG/HTML/background-snake.png');
-	background-size: cover;
-	z-index: 1;
+	position: fixed; /* Position fixe */
+	top: 5rem; /* Position en haut à 5rem depuis le haut */
+	left: 5em; /* Position à gauche à 5em */
+	right: 0; /* Position à droite à 0 */
+	margin: auto; /* Marge automatique */
+	border: 2vh solid black; /* Bordure de 2vh en couleur noire */
+	border-radius: 2vw; /* Bordure arrondie de 2vw */
+	height: 65vh; /* Hauteur de 65vh */
+	width: 65vh; /* Largeur de 65vh */
+	aspect-ratio: 1/1; /* Ratio d'aspect de 1/1 (carré) */
+	background-image: url('../SRC/IMG/HTML/background-snake.png'); /* Image d'arrière-plan */
+	background-size: cover; /* Redimensionnement de l'arrière-plan pour couvrir */
+	z-index: 1; /* Indice de position de 1 */
 }
 
 .pagesolo{
-	top: 6em;
+	top: 6em; /* Position en haut à 6em depuis le haut */
 }
 
 .contentsolo{
-	width:25%;
+	width:25%; /* Largeur de 25% */
 }
 
 
@@ -289,41 +301,41 @@ ul.navbar a:not(.active):hover {
 /* 1v1snake page */
 
 .divcanva {
-	display: inline-block;
-	position: fixed;
-	margin: auto;
-	right: 0;
-	left: 0;
-	top: 5rem;
-	width: 100%;
-	text-align: center;
-	left: 5em;
+	display: inline-block; /* Affichage en ligne */
+	position: fixed; /* Position fixe */
+	margin: auto; /* Marge automatique */
+	right: 0; /* Position à droite à 0 */
+	left: 0; /* Position à gauche à 0 */
+	top: 5rem; /* Position en haut à 5rem depuis le haut */
+	width: 100%; /* Largeur de 100% */
+	text-align: center; /* Alignement du texte au centre */
+	left: 5em; /* Position à gauche à 5em */
 }
 
 #snakeJ1 {
-	border: 1.4vh solid black;
-	border-radius: 1.2vw;
-	height: 55vh;
-	width: 55vh;
-	aspect-ratio: 1/1;
-	background-image: url('../SRC/IMG/HTML/background-snake.png');
-	background-size: cover;
+	border: 1.4vh solid black; /* Bordure de 1.4vh en couleur noire */
+	border-radius: 1.2vw; /* Bordure arrondie de 1.2vw */
+	height: 55vh; /* Hauteur de 55vh */
+	width: 55vh; /* Largeur de 55vh */
+	aspect-ratio: 1/1; /* Ratio d'aspect de 1/1 (carré) */
+	background-image: url('../SRC/IMG/HTML/background-snake.png'); /* Image d'arrière-plan */
+	background-size: cover; /* Redimensionnement de l'arrière-plan pour couvrir */
 }
 
 #snakeJ2 {
-	border: 1.4vh solid black;
-	border-radius: 1.2vw;
-	height: 55vh;
-	width: 55vh;
-	aspect-ratio: 1/1;
-	background-image: url('../SRC/IMG/HTML/background-snake.png');
-	background-size: cover;
+	border: 1.4vh solid black; /* Bordure de 1.4vh en couleur noire */
+	border-radius: 1.2vw; /* Bordure arrondie de 1.2vw */
+	height: 55vh; /* Hauteur de 55vh */
+	width: 55vh; /* Largeur de 55vh */
+	aspect-ratio: 1/1; /* Ratio d'aspect de 1/1 (carré) */
+	background-image: url('../SRC/IMG/HTML/background-snake.png'); /* Image d'arrière-plan */
+	background-size: cover; /* Redimensionnement de l'arrière-plan pour couvrir */
 }
 
 .page1v1{
-	top: 6em;
+	top: 6em; /* Position en haut à 6em depuis le haut */
 }
 
 .content1v1{
-	width:25%;
+	width:25%; /* Largeur de 25% */
 }

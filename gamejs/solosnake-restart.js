@@ -205,27 +205,48 @@ ctx.fillStyle = "#ffffff"; // Couleur du texte
 ctx.fillText("Score: " + score, 10, 25); // Affiche le score en haut à gauche du canvas
 }
 
-// Generate apple
+// Générer la pomme
 function generateApple() {
-apple.x = Math.floor(Math.random() * tileCount);
-apple.y = Math.floor(Math.random() * tileCount);
+	// Stocker la dernière position de la pomme
+	var lastApple = {
+		x: apple.x,
+		y: apple.y
+	};
+	
+	// Générer une nouvelle position pour la pomme
+	do {
+		apple.x = Math.floor(Math.random() * tileCount);
+		apple.y = Math.floor(Math.random() * tileCount);
+	} while (appleOnSnake() || (apple.x === lastApple.x && apple.y === lastApple.y));
 }
-// Game over
+
+// Vérifier si la pomme est sur le serpent
+function appleOnSnake() {
+	for (var i = 0; i < snake.length; i++) {
+		if (apple.x === snake[i].x && apple.y === snake[i].y) {
+			return true;
+		}
+	}
+	return false;
+}
+
+// Fin de jeu
 function gameOver() {
 	clearInterval(gameLoop);
 	alert("Game over! Score: " + score);
 }
 
-// Draw game
+// Dessiner le jeu
 function draw() {
-	// Clear canvas
+	// Effacer le canvas
 	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-	
-	// Draw snake
+
+	// Dessiner le serpent
 	for (var i = 0; i < snake.length; i++) {
 		var snakePart = snake[i];
 		var img;
-		//snale head
+
+		// Tête du serpent
 		if (i === 0) {
 			switch (direction) {
 				case "right":
@@ -241,8 +262,9 @@ function draw() {
 					img = headDownImg;
 					break;
 			}
-		//snake tail	
-		} else if (i === snake.length - 1) {
+		}
+		// Queue du serpent
+		else if (i === snake.length - 1) {
 			var previousSnakePart = snake[i - 1];
 
 			if (previousSnakePart.x < snakePart.x) {
@@ -253,64 +275,43 @@ function draw() {
 				img = tailDownImg;
 			} else if (previousSnakePart.y > snakePart.y) {
 				img = tailUpImg;
-				}
-			} else {
-				// Snake body
-				var previousPart = snake[i - 1];
-				var nextPart = snake[i + 1];
-				if (snakePart.x === previousPart.x && snakePart.x === nextPart.x) {
-					img = bodyVerticalImg;
-				} else if (snakePart.y === previousPart.y && snakePart.y === nextPart.y) {
-					img = bodyHorizontalImg;
-				} else if (snakePart.x < previousPart.x && snakePart.y < nextPart.y || snakePart.y < previousPart.y && snakePart.x < nextPart.x) {
-					img = cornerTopRightImg;
-				} else if (snakePart.x < previousPart.x && snakePart.y > nextPart.y || snakePart.y > previousPart.y && snakePart.x < nextPart.x) {
-					img = cornerBottomRightImg;
-			} else if (snakePart.x > previousPart.x && snakePart.y > nextPart.y || snakePart.y > previousPart.y && snakePart.x > nextPart.x) {
-					img = cornerBottomLeftImg;
-				} else if (snakePart.x > previousPart.x && snakePart.y < nextPart.y || snakePart.y < previousPart.y && snakePart.x > nextPart.x) {
-					img = cornerTopLeftImg;
-				}
 			}
+		}
+		// Corps du serpent
+		else {
+			var previousPart = snake[i - 1];
+			var nextPart = snake[i + 1];
+
+			if (snakePart.x === previousPart.x && snakePart.x === nextPart.x) {
+				img = bodyVerticalImg;
+			} else if (snakePart.y === previousPart.y && snakePart.y === nextPart.y) {
+				img = bodyHorizontalImg;
+			} else if (snakePart.x < previousPart.x && snakePart.y < nextPart.y || snakePart.y < previousPart.y && snakePart.x < nextPart.x) {
+				img = cornerTopRightImg;
+			} else if (snakePart.x < previousPart.x && snakePart.y > nextPart.y || snakePart.y > previousPart.y && snakePart.x < nextPart.x) {
+				img = cornerBottomRightImg;
+			} else if (snakePart.x > previousPart.x && snakePart.y > nextPart.y || snakePart.y > previousPart.y && snakePart.x > nextPart.x) {
+				img = cornerBottomLeftImg;
+			} else if (snakePart.x > previousPart.x && snakePart.y < nextPart.y || snakePart.y < previousPart.y && snakePart.x > nextPart.x) {
+				img = cornerTopLeftImg;
+			}
+		}
 
 		ctx.drawImage(img, snakePart.x * tileSize, snakePart.y * tileSize, tileSize, tileSize);
 	}
 
-	
-	// Draw apple
+	// Dessiner la pomme
 	var appleX = apple.x * tileSize;
 	var appleY = apple.y * tileSize;
 	ctx.drawImage(appleImg, appleX, appleY, tileSize, tileSize);
-	
-	// Draw score
+
+	// Dessiner le score
 	ctx.fillStyle = "#fff";
 	ctx.font = "20px Luckiest_Guy";
 	ctx.fillText("Score: " + score, 10, 30);
 }
 
-// Generate apple
-function generateApple() {
-    var lastApple = {
-        x: apple.x,
-        y: apple.y
-    };
-    do {
-        apple.x = Math.floor(Math.random() * tileCount);
-        apple.y = Math.floor(Math.random() * tileCount);
-    } while (appleOnSnake() || (apple.x === lastApple.x && apple.y === lastApple.y));
-}
-
-// Check if apple is on snake
-function appleOnSnake() {
-    for (var i = 0; i < snake.length; i++) {
-        if (apple.x === snake[i].x && apple.y === snake[i].y) {
-            return true;
-        }
-    }
-    return false;
-}
-
-// restart key event
+// Événement de redémarrage
 var restartButton = document.getElementById("restart");
 restartButton.addEventListener("click", function() {
 	location.reload();

@@ -291,7 +291,7 @@ function draw() {
 	ctx.fillText("Score: " + score, 10, 30);
 }
 
-// Generate apple
+// Génère la pomme
 function generateApple() {
     var lastApple = {
         x: apple.x,
@@ -303,7 +303,7 @@ function generateApple() {
     } while (appleOnSnake() || (apple.x === lastApple.x && apple.y === lastApple.y));
 }
 
-// Check if apple is on snake
+// Vérifie si la pomme n'est pas sur le serpent
 function appleOnSnake() {
     for (var i = 0; i < snake.length; i++) {
         if (apple.x === snake[i].x && apple.y === snake[i].y) {

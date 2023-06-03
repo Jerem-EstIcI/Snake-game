@@ -5,7 +5,7 @@
 ## Langage 
 HTML/Javascript/CSS/Markdown
 
-## Ressourcesutilisées
+## Ressources utilisées
 [Pour faire des README](https://www.youtube.com/watch?v=4lg3YyugRZQ&ab_channel=e-genieclimatique/) et [générateur de README](https://readme.so/fr/editor)
 <br>
 [Documentation pour le site](https://developer.mozilla.org/fr/)

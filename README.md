@@ -230,7 +230,7 @@ Le jeu se termine lorsque le serpent heurte un mur ou sa propre queue, et le but
 - [x] Bouton commencer
 - [x] Le bouton commencer disparais quand il est actionné **(option)**
 - [x] Le bouton recommencer apparais quand le bouton commencer est actionné **(option)**
-- [ ] La partie peu commencé quand une touche est actionné **(option)**
+- [x] La partie peu commencer/recommencer quand une touche est actionné **(option)**
 - [ ] La musique commence quand la partie commence et se fnit quand c'est terminé **(option)**
 - [x] Fonctionne avec les claviers QWERTY **(option)**
 #### Autres

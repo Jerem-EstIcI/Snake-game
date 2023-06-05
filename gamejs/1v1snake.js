@@ -139,9 +139,9 @@ document.addEventListener("keydown", function(event) {
 		direction = "left";
 	} else if (event.keyCode == 87 && direction != "down") { 	//W - up
 		direction = "up";
-	} else if (event.keyCode == 32) {							//Space - restart
-		location.reload();
-	}
+	} //else if (event.keyCode == 32) {							//Space - restart
+		// location.reload();
+	// }
 });
 
 // Dessine le jeu
@@ -451,9 +451,9 @@ document.addEventListener("keydown", function(event) {
 		direction2 = "right";
 	} else if (event.keyCode == 40 && direction2 != "up") { 	//K_DOWN - down
 		direction2 = "down";
-	} else if (event.keyCode == 32) {							//Space - restart
-		location.reload();
-	}
+	} //else if (event.keyCode == 32) {							//Space - restart
+		// location.reload();
+	// }
 });
 
 // Dessine le jeu
@@ -624,3 +624,20 @@ function appleOnSnake2() {
     }
     return false;
 }
+
+// Récupérer le bouton avec l'ID "start"
+// const boutonStart = document.getElementById("start");
+
+// Ajouter un écouteur d'événement pour la touche "Espace"
+// document.addEventListener("keydown", function(event) {
+  // if (event.keyCode === 32) {
+    // Vérifier si la touche pressée est la barre d'espace (keyCode 32)
+    // boutonStart.click(); // Activer le bouton "start"
+  // }
+// });
+
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 32) { // Vérifie si la touche enfoncée est la barre d'espace (keyCode 32)
+    window.location.href = '1v1snake-restart.html'; // Redirige vers le lien 
+  }
+});

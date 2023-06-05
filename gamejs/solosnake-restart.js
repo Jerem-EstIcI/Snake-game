@@ -316,3 +316,14 @@ var restartButton = document.getElementById("restart");
 restartButton.addEventListener("click", function() {
 	location.reload();
 });
+
+// Récupérer le bouton avec l'ID "start"
+// const boutonStart = document.getElementById("start");
+
+// Ajouter un écouteur d'événement pour la touche "Espace"
+// document.addEventListener("keydown", function(event) {
+  // if (event.keyCode === 32) {
+    // Vérifier si la touche pressée est la barre d'espace (keyCode 32)
+    // boutonStart.click(); // Activer le bouton "start"
+  // }
+// });

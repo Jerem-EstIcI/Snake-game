@@ -29,10 +29,42 @@ var cornerBottomLeftImg = new Image();
 cornerBottomLeftImg.src = "../SRC/IMG/JS/corner-bottom-left.png";
 var cornerBottomRightImg = new Image();
 cornerBottomRightImg.src = "../SRC/IMG/JS/corner-bottom-right.png";
+var appleImg2 = new Image();
+appleImg2.src = "../SRC/IMG/JS/apple.png";
+var headUpImg2 = new Image();
+headUpImg2.src = "../SRC/IMG/JS/head-up.png";
+var headDownImg2 = new Image();
+headDownImg2.src = "../SRC/IMG/JS/head-down.png";
+var headLeftImg2 = new Image();
+headLeftImg2.src = "../SRC/IMG/JS/head-left.png";
+var headRightImg2 = new Image();
+headRightImg2.src = "../SRC/IMG/JS/head-right.png";
+var bodyHorizontalImg2 = new Image();
+bodyHorizontalImg2.src = "../SRC/IMG/JS/body-horizontal.png"
+var bodyVerticalImg2 = new Image();
+bodyVerticalImg2.src = "../SRC/IMG/JS/body-vertical.png"
+var tailUpImg2 = new Image();
+tailUpImg2.src = "../SRC/IMG/JS/tail-up.png";
+var tailDownImg2 = new Image();
+tailDownImg2.src = "../SRC/IMG/JS/tail-down.png";
+var tailLeftImg2 = new Image();
+tailLeftImg2.src = "../SRC/IMG/JS/tail-left.png";
+var tailRightImg2 = new Image();
+tailRightImg2.src = "../SRC/IMG/JS/tail-right.png";
+var cornerTopLeftImg2 = new Image();
+cornerTopLeftImg2.src = "../SRC/IMG/JS/corner-top-left.png";
+var cornerTopRightImg2 = new Image();
+cornerTopRightImg2.src = "../SRC/IMG/JS/corner-top-right.png";
+var cornerBottomLeftImg2 = new Image();
+cornerBottomLeftImg2.src = "../SRC/IMG/JS/corner-bottom-left.png";
+var cornerBottomRightImg2 = new Image();
+cornerBottomRightImg2.src = "../SRC/IMG/JS/corner-bottom-right.png";
 
 // Initialisation du Canva
 var canvas = document.getElementById("snakeJ1");
 var ctx = canvas.getContext("2d");
+var canvas2 = document.getElementById("snakeJ2");
+var ctx2 = canvas2.getContext("2d");
 
 // Variables
 var tileSize = 32; // Taille en pixels d'une tuile
@@ -49,6 +81,24 @@ var apple = {
 var direction = "right"; // Direction initiale du serpent
 var score = 0; // Score du joueur
 var gameLoop; // Identifiant de la boucle de jeu
+var death = 0; // 0 en vie 1 mort
+var tileSize2 = 32; // Taille en pixels d'une tuile
+var canvasWidth2 = canvas2.width; // Largeur du canvas
+var canvasHeight2 = canvas2.height; // Hauteur du canvas
+var tileCount2 = 15; // Nombre de tuiles dans le canvas (hauteur et longueur)
+var snake2 = []; // Tableau représentant le serpent
+var snakeLength2 = 3; // Longueur initiale du serpent
+var speed2 = 115 // Vitesse du jeu en millisecondes
+var apple2 = {
+	x: 0,
+	y: 0
+}; // Objet représentant la position de la pomme
+var direction2 = "right"; // Direction initiale du serpent
+var score2 = 0; // Score du joueur
+var gameLoop2; // Identifiant de la boucle de jeu
+var death2 = 0; // 0 en vie 1 mort
+
+// Serpent 1
 
 // Génère le serpent
 for (var i = snakeLength - 1; i >= 0; i--) {
@@ -205,6 +255,8 @@ apple.y = Math.floor(Math.random() * tileCount);
 // Game over
 function gameOver() {
 	clearInterval(gameLoop);
+	death++;
+	checkDeaths(); // Vérifie les conditions de fin de jeu
 }
 
 // Draw game
@@ -306,58 +358,8 @@ restartButton.addEventListener("click", function() {
 	location.reload();
 });
 
+// Serpent 2
 
-// Load images
-var appleImg2 = new Image();
-appleImg2.src = "../SRC/IMG/JS/apple.png";
-var headUpImg2 = new Image();
-headUpImg2.src = "../SRC/IMG/JS/head-up.png";
-var headDownImg2 = new Image();
-headDownImg2.src = "../SRC/IMG/JS/head-down.png";
-var headLeftImg2 = new Image();
-headLeftImg2.src = "../SRC/IMG/JS/head-left.png";
-var headRightImg2 = new Image();
-headRightImg2.src = "../SRC/IMG/JS/head-right.png";
-var bodyHorizontalImg2 = new Image();
-bodyHorizontalImg2.src = "../SRC/IMG/JS/body-horizontal.png"
-var bodyVerticalImg2 = new Image();
-bodyVerticalImg2.src = "../SRC/IMG/JS/body-vertical.png"
-var tailUpImg2 = new Image();
-tailUpImg2.src = "../SRC/IMG/JS/tail-up.png";
-var tailDownImg2 = new Image();
-tailDownImg2.src = "../SRC/IMG/JS/tail-down.png";
-var tailLeftImg2 = new Image();
-tailLeftImg2.src = "../SRC/IMG/JS/tail-left.png";
-var tailRightImg2 = new Image();
-tailRightImg2.src = "../SRC/IMG/JS/tail-right.png";
-var cornerTopLeftImg2 = new Image();
-cornerTopLeftImg2.src = "../SRC/IMG/JS/corner-top-left.png";
-var cornerTopRightImg2 = new Image();
-cornerTopRightImg2.src = "../SRC/IMG/JS/corner-top-right.png";
-var cornerBottomLeftImg2 = new Image();
-cornerBottomLeftImg2.src = "../SRC/IMG/JS/corner-bottom-left.png";
-var cornerBottomRightImg2 = new Image();
-cornerBottomRightImg2.src = "../SRC/IMG/JS/corner-bottom-right.png";
-
-// Initialisation du Canva
-var canvas2 = document.getElementById("snakeJ2");
-var ctx2 = canvas2.getContext("2d");
-
-// Variables
-var tileSize2 = 32; // Taille en pixels d'une tuile
-var canvasWidth2 = canvas2.width; // Largeur du canvas
-var canvasHeight2 = canvas2.height; // Hauteur du canvas
-var tileCount2 = 15; // Nombre de tuiles dans le canvas (hauteur et longueur)
-var snake2 = []; // Tableau représentant le serpent
-var snakeLength2 = 3; // Longueur initiale du serpent
-var speed2 = 115 // Vitesse du jeu en millisecondes
-var apple2 = {
-	x: 0,
-	y: 0
-}; // Objet représentant la position de la pomme
-var direction2 = "right"; // Direction initiale du serpent
-var score2 = 0; // Score du joueur
-var gameLoop2; // Identifiant de la boucle de jeu
 
 // Génère le serpent
 for (var i = snakeLength2 - 1; i >= 0; i--) {
@@ -511,6 +513,8 @@ apple2.y = Math.floor(Math.random() * tileCount2);
 // Game over
 function gameOver2() {
 	clearInterval(gameLoop2);
+	death2++;
+	checkDeaths(); // Vérifie les conditions de fin de jeu
 }
 
 // Draw game
@@ -622,3 +626,11 @@ restartButton2.addEventListener("click", function() {
     // boutonStart.click(); // Activer le bouton "start"
   // }
 // });
+
+// Vérifier les conditions de fin de jeu
+function checkDeaths() {
+  if (death === 1 && death2 === 1) {
+    // Les deux serpents sont morts
+    alert("GG! Score : Player one " + score + " Player two " + score2);
+  }
+}

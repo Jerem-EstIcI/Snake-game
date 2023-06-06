@@ -224,7 +224,7 @@ Le jeu se termine lorsque le serpent heurte un mur ou sa propre queue, et le but
 #### Score
 - [x] Score 
 - [ ] meilleur score **(option)**
-- [ ] Camparateur de scores 1V1
+- [x] Camparateur de scores 1V1
 #### Bouttons/Touches/Musique
 - [x] Bouton recommencer
 - [x] Bouton commencer

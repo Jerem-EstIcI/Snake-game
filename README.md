@@ -14,12 +14,6 @@ HTML/Javascript/CSS/Markdown
 <br>
 [Générateur de gif a partir d'images](ezgif.com)
 
-## Musique utilisée
-- Auteur: <a href="https://soundcloud.com/c_luke_hall">Luke Hall</a><br />
-Track: <b> Dystopia</b><br />
-Licence: <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">https://creativecommons.org/licenses/by-sa/3.0/deed.fr</a><br />
-Source: <a href="https://www.auboutdufil.com">Télécharger la musique gratuitement</a>
-
 ## Régles
 _**Votre but**_ : Le but du jeu Snake est de contrôler un serpent qui se déplace sur un terrain de jeu en 2D, en le faisant manger des aliments pour le faire grandir tout en évitant de heurter les murs ou la queue du serpent lui-même.
 Le serpent se déplace continuellement dans une direction donnée, et le joueur peut changer cette direction en utilisant les touches de direction sur le clavier.

@@ -60,6 +60,12 @@ cornerBottomLeftImg2.src = "../SRC/IMG/JS/corner-bottom-left.png";
 var cornerBottomRightImg2 = new Image();
 cornerBottomRightImg2.src = "../SRC/IMG/JS/corner-bottom-right.png";
 
+// Load Sound
+var appleSound = new Audio();
+appleSound.src = "../SRC/MUSIC/JS/apple.mp3";
+var deathSound = new Audio();
+deathSound.src = "../SRC/MUSIC/JS/death.mp3";
+
 // Initialisation du Canva
 var canvas = document.getElementById("snakeJ1");
 var ctx = canvas.getContext("2d");
@@ -146,6 +152,7 @@ for (var i = 0; i < snake.length; i++) {
 // Vérifier la colision avec la pomme
 if (nextX === apple.x && nextY === apple.y) {
 	snakeLength++; // Augmente la longueur du serpent
+	appleSound.play();
 	score++; // Augmente le score du joueur
 	generateApple(); // Génère une nouvelle position pour la pomme
 }
@@ -413,6 +420,7 @@ for (var i = 0; i < snake2.length; i++) {
 // Vérifier la colision avec la pomme
 if (nextX2 === apple2.x && nextY2 === apple2.y) {
 	snakeLength2++; // Augmente la longueur du serpent
+	appleSound.play();
 	score2++; // Augmente le score du joueur
 	generateApple2(); // Génère une nouvelle position pour la pomme
 }
@@ -651,6 +659,7 @@ document.addEventListener('keydown', function(event) {
 function checkDeaths() {
   if (death === 1 && death2 === 1) {
     // Les deux serpents sont morts
+	deathSound.play();
     alert("GG! Score : Player one " + score + " Player two " + score2);
   }
 }

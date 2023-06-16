@@ -30,6 +30,12 @@ cornerBottomLeftImg.src = "../SRC/IMG/JS/corner-bottom-left.png";
 var cornerBottomRightImg = new Image();
 cornerBottomRightImg.src = "../SRC/IMG/JS/corner-bottom-right.png";
 
+// Load Sound
+var appleSound = new Audio();
+appleSound.src = "../SRC/MUSIC/JS/apple.mp3";
+var deathSound = new Audio();
+deathSound.src = "../SRC/MUSIC/JS/death.mp3";
+
 // Initialisation du Canva
 var canvas = document.getElementById("snake");
 var ctx = canvas.getContext("2d");
@@ -96,6 +102,7 @@ for (var i = 0; i < snake.length; i++) {
 // Vérifier la colision avec la pomme
 if (nextX === apple.x && nextY === apple.y) {
 	snakeLength++; // Augmente la longueur du serpent
+	appleSound.play();
 	score++; // Augmente le score du joueur
 	generateApple(); // Génère une nouvelle position pour la pomme
 }
@@ -227,7 +234,9 @@ apple.y = Math.floor(Math.random() * tileCount);
 // Game over
 function gameOver() {
 	clearInterval(gameLoop);
+	deathSound.play();
 	alert("Game over! Score: " + score);
+	
 }
 
 // Draw game

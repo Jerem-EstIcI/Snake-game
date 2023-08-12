@@ -55,6 +55,7 @@ var apple = {
 var direction = "right"; // Direction initiale du serpent
 var score = 0; // Score du joueur
 var gameLoop; // Identifiant de la boucle de jeu
+var bestScore = 0; // Meilleur score initial
 
 // Génère le serpent
 for (var i = snakeLength - 1; i >= 0; i--) {
@@ -239,9 +240,15 @@ function appleOnSnake() {
 
 // Fin de jeu
 function gameOver() {
-	clearInterval(gameLoop);
-	deathSound.play();
-	alert("Game over! Score: " + score);
+    clearInterval(gameLoop);
+    deathSound.play();
+    
+    if (score > bestScore) {
+        bestScore = score; // Update M
+        localStorage.setItem('bestScore', bestScore); // Sauvegarde le meilleur score dans le local storage
+    }
+    
+    alert("Game over! Score: " + score);
 }
 
 // Dessiner le jeu
@@ -313,10 +320,16 @@ function draw() {
 	var appleY = apple.y * tileSize;
 	ctx.drawImage(appleImg, appleX, appleY, tileSize, tileSize);
 
-	// Dessiner le score
-	ctx.fillStyle = "#fff";
-	ctx.font = "20px Luckiest_Guy";
-	ctx.fillText("Score: " + score, 10, 30);
+	var storedBestScore = localStorage.getItem('bestScore');
+    if (storedBestScore !== null) {
+        bestScore = parseInt(storedBestScore);
+    }
+    
+    // Dessine le score et le meilleur score
+    ctx.fillStyle = "#fff";
+    ctx.font = "20px Luckiest_Guy";
+    ctx.fillText("Score: " + score, 10, 30);
+    ctx.fillText("Best: " + bestScore, canvasWidth - 100, 30); // Affiche le meeilleur score
 }
 
 // Événement de redémarrage
